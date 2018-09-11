@@ -35,13 +35,13 @@
                     </a>
                     <div class="dropdown-menu active" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">ข้อมูลผู้ใช้งาน (Dealer)</a>
-                        <a class="dropdown-item" href="#">จัดการข้อมูล POI</a>
-                        <a class="dropdown-item" href="#">ดูชั่วคราว</a>
+                        <a class="dropdown-item" href="poi.html">จัดการข้อมูล POI</a>
+                        <a class="dropdown-item" href="flashView.html">ดูชั่วคราว <font color="red">New!</font></a>
                         <a class="dropdown-item" href="#">ข้อมูลผู้ใช้งาน (ลูกค้า)</a>
                         <a class="dropdown-item" href="#">ตั้งค่าตัวเครื่อง</a>
-                        <a class="dropdown-item active" href="#">พนักงานขับรถ <font color="red">New!</font></a>
+                        <a class="dropdown-item" href="driver.html">พนักงานขับรถ <font color="red">New!</font></a>
                         <a class="dropdown-item" href="#">ส่งคำสั่ง</a>
-                        <a class="dropdown-item" href="#">ประวัติการเข้าระบบ</a>
+                        <a class="dropdown-item" href="#">ประวัติการเข้าระบบ <font color="red">New!</font></a>
                         <a class="dropdown-item" href="#">ระบบซ่อมบำรุง</a>
                     </div>
                 </li>
@@ -74,7 +74,7 @@
 
     <div class="container">
         <br>
-        <h4>พนักงานขับรถ</h4>
+        <h4>ดูชั่วคราว</h4>
         <table class="table">
             <thead class="thead-light">
                 <tr>
@@ -84,14 +84,15 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Driver</td>
+                    <td>flash_view</td>
                     <td>
                         <div class="row">
                             <div class="col-sm-12">
-                                http://localhost:3000/newDriver<br>
-                                http://localhost:3000/deleteDriver/{id}<br> 
-                                http://localhost:3000/updateDriver/{id}<br>
-                                http://localhost:3000/getDriver/{pageSize}/{pageNumber}
+                                 http://localhost:3000/getFlashViewCode<br>
+                                 http://localhost:3000/newFlashView<br>
+                                 http://localhost:3000/getFlashView/{pageNumber}/{pageSize}<br>
+                                 http://localhost:3000/deleteFlashView/{flash_view_cd}<br>
+                                 http://localhost:3000/updateFlashView/{id}<br>
                             </div>
                         </div>
                     </td>
@@ -112,27 +113,23 @@
         document.querySelector("#db").appendChild(jsonViewer.getContainer());
 
         var db = JSON.stringify({
-            "prefix": "นาย",
-            "name": "วุฒินันท์",
-            "lastname": "รุ่งเจริญ",
-            "gender": "ชาย",
-            "telephone": "018110100",
-            "birthday": "31/12/9999",
-            "card_number": "3200100344974",
-            "card_registrar": "บึงกุ่ม",
-            "card_nation": "ไทย",
-            "license_type": "ส่วนบุคคล",
-            "license_gov": "บึงกุ่ม",
-            "license_number": "เลขที่.",
-            "license_start": "วันอนุญาต",
-            "license_expire": "วันครบกำหนด",
-            "note": "Update ข้อมูล Driver",
-            "user_id": 1,
-            "create_user": "Wutthin",
-            "created_date": "2018-09-07T17:32:52.308+0000",
-            "last_upd_user": "Wutthin",
-            "last_upd_dtm": "2018-09-07T17:41:27.925+0000"
-        });
+                    "user_id": "รหัสผู้ใช้งาน",
+                    "flash_view_cd": "รหัส",
+                    "cars": [
+                                {
+                                    "device_id" : "",
+                                    "device_no": ""
+                                }
+                            ],
+                    "start_dtm" : "2018-09-08T16:27:53.187+0000",
+                    "end_dtm" : "2018-09-08T16:27:53.187+0000", 
+                    "remarks" : "หมายเหตุ",
+                    "create_user" : "Wutthin",
+                    "last_upd_user" : "Wutthin",
+                    "create_dtm" : "2018-09-08T16:27:53.187+0000",
+                    "last_upd_dtm" : "2018-09-08T16:27:53.187+0000"
+                    }
+        );
 
         var setJSON = function () {
             try {
@@ -141,11 +138,9 @@
             catch (err) {
                 alert(err);
             }
-        }(); 
-    
+        }();
+
     </script>
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
