@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
 
+    <!-- JSON Viewer -->
+    <script src="./lib/jsonViewer/json-viewer.js"></script>
+    <link rel="stylesheet" href="./lib/jsonViewer/json-viewer.css">
+
     <title>FastTrack API Specification</title>
 </head>
 
@@ -23,19 +27,19 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         จัดการข้อมูล
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <div class="dropdown-menu active" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">ข้อมูลผู้ใช้งาน (Dealer)</a>
                         <a class="dropdown-item" href="#">จัดการข้อมูล POI</a>
                         <a class="dropdown-item" href="#">ดูชั่วคราว</a>
                         <a class="dropdown-item" href="#">ข้อมูลผู้ใช้งาน (ลูกค้า)</a>
                         <a class="dropdown-item" href="#">ตั้งค่าตัวเครื่อง</a>
-                        <a class="dropdown-item" href="drivers.html">พนักงานขับรถ <font color="red">New!</font></a>
+                        <a class="dropdown-item active" href="#">พนักงานขับรถ <font color="red">New!</font></a>
                         <a class="dropdown-item" href="#">ส่งคำสั่ง</a>
                         <a class="dropdown-item" href="#">ประวัติการเข้าระบบ</a>
                         <a class="dropdown-item" href="#">ระบบซ่อมบำรุง</a>
@@ -68,7 +72,80 @@
         </div>
     </nav>
 
+    <div class="container">
+        <br>
+        <h4>พนักงานขับรถ</h4>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Topic</th>
+                    <th>Url</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Driver</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                http://localhost:3000/newDriver<br>
+                                http://localhost:3000/deleteDriver/{id}<br> 
+                                http://localhost:3000/updateDriver/{id}<br>
+                                http://localhost:3000/getDriver/{pageSize}/{pageNumber}
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h5>Example Data</h5>
+                        <div class="col-sm-12" id="db"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        var jsonObj = {};
+        var jsonViewer = new JSONViewer();
+        document.querySelector("#db").appendChild(jsonViewer.getContainer());
+
+        var db = JSON.stringify({
+            "prefix": "นาย",
+            "name": "วุฒินันท์",
+            "lastname": "รุ่งเจริญ",
+            "gender": "ชาย",
+            "telephone": "018110100",
+            "birthday": "31/12/9999",
+            "card_number": "3200100344974",
+            "card_registrar": "บึงกุ่ม",
+            "card_nation": "ไทย",
+            "license_type": "ส่วนบุคคล",
+            "license_gov": "บึงกุ่ม",
+            "license_number": "เลขที่.",
+            "license_start": "วันอนุญาต",
+            "license_expire": "วันครบกำหนด",
+            "note": "Update ข้อมูล Driver",
+            "user_id": 1,
+            "create_user": "Wutthin",
+            "created_date": "2018-09-07T17:32:52.308+0000",
+            "last_upd_user": "Wutthin",
+            "last_upd_dtm": "2018-09-07T17:41:27.925+0000"
+        });
+
+        var setJSON = function () {
+            try {
+                jsonViewer.showJSON(JSON.parse(db), null, 1);
+            }
+            catch (err) {
+                alert(err);
+            }
+        }(); 
     
+    </script>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
