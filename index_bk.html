@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FAST8 API Reference</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="./lib/jsonViewer/json-viewer.js"></script> 
+    <link rel="stylesheet" href="./lib/jsonViewer/json-viewer.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Fast8 API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Admin<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="driver.html">driver</a></li>
+                            <li><a href="poi.html">poi</a></li>
+                            <li><a href="accessLog.html">access long</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Realtime<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="realtime.html">realtime</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Report<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="report1.html">report 1</a></li>
+                            <li><a href="report2.html">report 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br>
+        <h3>Driver</h3>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Topic</th>
+                    <th>Url</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Driver</td>
+                    <td>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                 http://localhost:3000/newDriver http://localhost:3000/deleteDriver/{id} <br>
+                                 http://localhost:3000/updateDriver/{id}<br>
+                                 http://localhost:3000/getDriver/{pageSize}/{pageNumber}
+                            </div>
+                        </div>
+                    </td>
+                    <!-- <td>
+                        <div class="col-sm-12" id="driver"></div>
+                    </td> -->
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h5>Example Data</h5>
+                        <div class="col-sm-12" id="driver"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<!-- 
+    <h1 style="text-decoration: underline;">JSONViewer test page</h1>
+    <h2>JSON stringified value:</h2>
+    <textarea style="width: 100%; min-height: 100px;"></textarea>
+    <p>Choose action:</p>
+    <div>
+        <button type="button" class="load-json">Load JSON</button>
+        <button type="button" class="collapse">Collapse to level 1</button>
+        <button type="button" class="maxlvl">Show JSON to level 1</button>
+    </div>
+    <h2>Output:</h2> -->
+   
+    <script>
+        var jsonObj = {};
+        var jsonViewer = new JSONViewer();
+        document.querySelector("#driver").appendChild(jsonViewer.getContainer());
+    
+        var driver = JSON.stringify({
+            "prefix": "นาย",
+            "name": "วุฒินันท์",    
+            "lastname": "รุ่งเจริญ",
+            "gender": "ชาย",
+            "telephone": "018110100",
+            "birthday": "31/12/9999",
+            "card_number": "3200100344974",
+            "card_registrar": "บึงกุ่ม",
+            "card_nation": "ไทย",
+            "license_type": "ส่วนบุคคล",
+            "license_gov": "บึงกุ่ม",
+            "license_number": "เลขที่.",
+            "license_start": "วันอนุญาต",
+            "license_expire": "วันครบกำหนด",
+            "note": "Update ข้อมูล Driver",
+            "user_id": 1,
+            "create_user": "Wutthin",
+            "created_date": "2018-09-07T17:32:52.308+0000",
+            "last_upd_user": "Wutthin",
+            "last_upd_dtm": "2018-09-07T17:41:27.925+0000"
+        });
+
+        var setJSON = function () {
+            try {
+                jsonViewer.showJSON(JSON.parse(driver), null, 1);
+            }
+            catch (err) {
+                alert(err);
+            }
+        }();
+
+        //var loadJsonBtn = document.querySelector("button.load-json");
+        //var collapseBtn = document.querySelector("button.collapse");
+        //var maxlvlBtn = document.querySelector("button.maxlvl");
+
+        // loadJsonBtn.addEventListener("click", function () {
+        //     setJSON();
+        //     jsonViewer.showJSON(jsonObj);
+        // });
+
+        // collapseBtn.addEventListener("click", function () {
+        //     jsonViewer.showJSON(jsonObj, null, 1);
+        // });
+
+        // maxlvlBtn.addEventListener("click", function () {
+        //     jsonViewer.showJSON(jsonObj, 1);
+        // });
+
+
+   
+    </script>
+
+</body>
+
+</html>
