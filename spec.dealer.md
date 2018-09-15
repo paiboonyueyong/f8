@@ -1,12 +1,16 @@
 # Dealer Management
 
+## header (alway pass)
+    (user_id,user_name,token)
+    for development phase use token in list below but for production have to get from login method
+        ->  admin = "admin"
+        -> dealer = "dealer"
+        -> reseller = "reseller"
+
 # newDealer
 
 ## url
     http://{server}/newDealer 
-
-## header 
-    (user_id,user_name,token)
 
 ## body
 ```json
