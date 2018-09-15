@@ -1,9 +1,8 @@
 # Driver Management 
 
-## header (alway pass) 
-    (user_id,user_name,token) 
+## Request Header (alway pass : user_id,user_name,token) 
     for development phase use token in list below but for production have to get from login method 
-        ->  admin = "admin" 
+        -> admin = "admin" 
         -> dealer = "dealer" 
         -> reseller = "reseller" 
 
@@ -12,7 +11,7 @@
 ## url 
     http://{server}/newDriver  
 
-## body 
+## request body 
 ```json 
 { 
     "prefix":"คำนำหน้า", 
@@ -47,7 +46,7 @@
 ## url 
     http://{server}/updateDriver/{driver_id}  
 
-## body 
+## request body 
 ```json 
 { 
     "prefix":"นาย", 
@@ -82,7 +81,7 @@
 ## url 
     http://{server}/deleteDriver/{driver_id}  
 
-## body 
+## request body 
 
 ## response (if success) 
 
@@ -99,7 +98,7 @@
 ## url 
     http://{server}/getDriverInfo/{driver_id}  
 
-## body 
+## request body 
 
 ## response (if success) 
 
@@ -139,7 +138,7 @@
 ## url 
     http://{server}/getDriverList/{pageNumber}/{pageSize}  
 
-## body 
+## request body 
 ```json 
 { 
     "filter" : "นาย"  
