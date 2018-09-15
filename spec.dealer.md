@@ -1,5 +1,7 @@
 # Dealer Management
 
+# newDealer
+
 ## url
     http://{server}/newDealer 
 
