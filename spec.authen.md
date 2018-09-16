@@ -33,7 +33,7 @@
     This method not have header
 
 ## url
-    http://{server}/getUserInfo/{id}
+    http://{server}/login
 
 ## request body
 
