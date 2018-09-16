@@ -82,5 +82,42 @@
 }
 ```
 
+# getUserInfo
+    Use to get information of user all level
+
+## url
+    http://{server}/getUserInfo/{id}
+
+## request body (No)
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": [
+        {
+            "_id": "5b9e1557fff63308f8c4e603",
+            "login_name": "Dealer2",
+            "first_name": "Toto dealer",
+            "last_name": "กันนี่",
+            "tel_no": "026876091,028976718",
+            "email": "paiboon.yue@gmail.com",
+            "company_name": "simple corporation",
+            "line_api_token": "xxxyyyzzz",
+            "password": "dealer128",
+            "is_send_daily_report": true,
+            "user_id": 3,
+            "parent_id": "1",
+            "user_level": 2,
+            "create_user": "Paiboo1 (1)",
+            "create_dtm": "2018-09-16T08:33:27.011Z"
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+
+```
+
 
 
