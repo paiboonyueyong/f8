@@ -107,7 +107,7 @@
             "password": "dealer128",
             "is_send_daily_report": true,
             "user_id": 3,
-            "parent_id": "1",
+            "parent_id": 1,
             "user_level": 2,
             "create_user": "Paiboo1 (1)",
             "create_dtm": "2018-09-16T08:33:27.011Z"
@@ -152,7 +152,7 @@
             "password": "dealer128",
             "is_send_daily_report": true,
             "user_id": 3,
-            "parent_id": "1",
+            "parent_id": 1,
             "user_level": 2,
             "create_user": "Paiboo1 (1)",
             "create_dtm": "2018-09-16T08:33:27.011Z"

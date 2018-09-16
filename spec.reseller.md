@@ -152,3 +152,86 @@
 }
 
 ```
+# getResellerList
+
+## url
+    http://{server}//getResellerList/{pageNo}/{pageSize}
+
+## request body (body empty = getAll)
+
+```json
+
+{    
+	"filter":"ไพ"
+}
+
+```
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": [
+        {
+            "_id": "5b9e208670fccd37780a6a4b",
+            "login_name": "kellreseller",
+            "owner_status": true,
+            "first_name": "ไพบูลย์2",
+            "last_name": "ยืนยง",
+            "tel_no": "026876091",
+            "email": "paiboon.yue@gmail.com",
+            "company_name": "simple corporation",
+            "password": "123456",
+            "is_send_email_alert_overdue": false,
+            "is_auto_dispermit": true,
+            "reseller_note": "test note",
+            "privileges": {
+                "is_view_tracking": true,
+                "is_view_poi": true,
+                "is_edit_poi": true,
+                "is_view_history": false,
+                "is_send_command": true,
+                "is_view_report": false
+            },
+            "user_id": 6,
+            "parent_id": 2,
+            "user_level": 3,
+            "create_user": "kelly dealer (2)",
+            "create_dtm": "2018-09-16T09:21:10.093Z"
+        },
+        {
+            "_id": "5b9e226d2b496212505e0138",
+            "login_name": "kellyReseller",
+            "owner_status": true,
+            "first_name": "ไพบูลย์2",
+            "last_name": "ยืนยง",
+            "tel_no": "026876091",
+            "email": "paiboon.yue@gmail.com",
+            "company_name": "simple corporation",
+            "password": "newPassword",
+            "is_send_email_alert_overdue": false,
+            "is_auto_dispermit": true,
+            "reseller_note": "test update data",
+            "privileges": {
+                "is_view_tracking": true,
+                "is_view_poi": true,
+                "is_edit_poi": true,
+                "is_view_history": false,
+                "is_send_command": true,
+                "is_view_report": false
+            },
+            "user_id": 7,
+            "parent_id": 2,
+            "user_level": 3,
+            "create_user": "kelly dealer (2)",
+            "create_dtm": "2018-09-16T09:29:17.520Z",
+            "last_upd_dtm": "2018-09-16T10:18:05.435Z",
+            "last_upd_user": "IwantTochange (7)"
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull",
+    "RESULT_TOTAL": 2
+}
+
+```
