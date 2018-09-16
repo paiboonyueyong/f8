@@ -64,36 +64,6 @@
     "RESULT_MESSAGE": "Successfull"
 }
 ```
-
-# updateDealer
-
-## url
-    http://{server}/updateDealer/{id}
-
-## request body
-```json
-{
-    "login_name": "Dealer1",
-    "first_name": "ไพบูลย์ dearer1",
-    "last_name": "ยืนยง",
-    "tel_no": "026876091",
-    "email": "paiboon.yue@gmail.com",
-    "company_name": "simple corporation2",
-    "line_api_token": "xxxyyyzzz",
-    "password": "dealer1234",
-    "is_send_daily_report": true
-}
-```
-## response (if success)
-
-```json
-{
-    "RESULT_DATA": [],
-    "RESULT_STATUS": "000",
-    "RESULT_MESSAGE": "Successfull"
-}
-```
-
 # deleteUser
     Use to delete admin, dealer, reseller
 
