@@ -62,7 +62,6 @@
     "tel_no": "026876091",
     "email": "paiboon.yue@gmail.com",
     "company_name": "simple corporation",
-    "password": "123456",
     "is_send_email_alert_overdue": false,
     "is_auto_dispermit": true,
     "reseller_note": "test update data",

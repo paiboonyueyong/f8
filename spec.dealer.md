@@ -51,7 +51,6 @@
     "email": "paiboon.yue@gmail.com",
     "company_name": "simple corporation2",
     "line_api_token": "xxxyyyzzz",
-    "password": "dealer1234",
     "is_send_daily_report": true
 }
 ```
