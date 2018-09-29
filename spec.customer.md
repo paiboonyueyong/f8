@@ -153,7 +153,7 @@
 # getResellerList
 
 ## url
-    http://{server}//getCustomerList/{pageNo}/{pageSize}
+    http://{server}/getCustomerList/{pageNo}/{pageSize}
 
 ## request body (body empty = getAll)
 

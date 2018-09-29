@@ -6,7 +6,7 @@
         -> dealer = "dealer" 
         -> customer = "customer"
 
-# newReseller
+# newEmployee
 
 ## url
     http://{server}/newEmployee 
@@ -38,7 +38,7 @@
 }
 ```
 
-# updateReseller
+# updateEmployee
 
 ## url
     http://{server}/updateEmployee/{id}
@@ -124,10 +124,10 @@
 }
 
 ```
-# getResellerList
+# getEmployeeList
 
 ## url
-    http://{server}//getEmployeeList/{pageNo}/{pageSize}
+    http://{server}/getEmployeeList/{pageNo}/{pageSize}
 
 ## request body (body empty = getAll)
 
