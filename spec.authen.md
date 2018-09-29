@@ -4,17 +4,26 @@
     for development phase use token in list below but for production have to get from login method 
         -> admin = "admin" 
         -> dealer = "dealer" 
-        -> reseller = "reseller"
+        -> reseller = "reseller" change to -> "customer"
+
+        !!!New -> customer able to create employee
+
+        User Level (use field user_level) get from login method
+        Owner -> (user_level = 0)  create by developer
+        Admin -> (user_level = 1)  create by Owner
+        Dealer -> (user_level = 2) create by Admin or Dealer
+        Customer -> (user_level = 3) create by Dealer or Admin
+        Employee -> (user_level = 4) create by Customer
 
 # changePassword
 
 ## url
-    http://{server}/changePassword/{id}
+    http://{server}/changePassword/{id}/{oldpassword}
 
 ## request body
 ```json
 {
-    "password": "newPassword",   
+    "password": "newPassword"
 }
 
 ```

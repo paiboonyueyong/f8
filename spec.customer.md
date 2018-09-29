@@ -1,22 +1,22 @@
-# Reseller Management
+# Customer Management
 
 ## Request Header (alway pass : user_id,user_name,token) 
     for development phase use token in list below but for production have to get from login method 
         -> admin = "admin" 
         -> dealer = "dealer" 
-        -> reseller = "reseller"
+        -> customer = "customer"
 
 # newReseller
 
 ## url
-    http://{server}/newReseller 
+    http://{server}/newCustomer 
 
 ## request body
 ```json
 
 {
-    "login_name": "kellreseller",
-    "owner_status": true,
+    "login_name": "kellCustomer",
+    //"owner_status": true, (remove from new requirment)
     "first_name": "ไพบูลย์2",
     "last_name": "ยืนยง",
     "tel_no": "026876091",
@@ -50,13 +50,13 @@
 # updateReseller
 
 ## url
-    http://{server}/updateReseller/{id}
+    http://{server}/updateCustomer/{id}
 
 ## request body
 ```json
 {
-    "login_name": "kellyReseller",
-    "owner_status": true,
+    "login_name": "kellyCustomer",
+    //"owner_status": true, (remove from new requirement)
     "first_name": "ไพบูลย์2",
     "last_name": "ยืนยง",
     "tel_no": "026876091",
@@ -119,7 +119,6 @@
         {
             "_id": "5b9e226d2b496212505e0138",
             "login_name": "kellyReseller",
-            "owner_status": true,
             "first_name": "ไพบูลย์2",
             "last_name": "ยืนยง",
             "tel_no": "026876091",
@@ -154,7 +153,7 @@
 # getResellerList
 
 ## url
-    http://{server}//getResellerList/{pageNo}/{pageSize}
+    http://{server}//getCustomerList/{pageNo}/{pageSize}
 
 ## request body (body empty = getAll)
 
@@ -174,7 +173,7 @@
         {
             "_id": "5b9e208670fccd37780a6a4b",
             "login_name": "kellreseller",
-            "owner_status": true,
+            //"owner_status": true, (remove from new requirement)
             "first_name": "ไพบูลย์2",
             "last_name": "ยืนยง",
             "tel_no": "026876091",

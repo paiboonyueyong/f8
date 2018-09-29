@@ -22,7 +22,8 @@
     "company_name": "simple corporation",
     "line_api_token": "xxxyyyzzz",
     "password": "dealer1234",
-    "is_send_daily_report": true
+    "is_send_daily_report": true,
+    "is_create_subdealer": false /* new requirement */
 }
 ```
 ## response (if success)
