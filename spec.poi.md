@@ -4,7 +4,8 @@
     for development phase use token in list below but for production have to get from login method 
         -> admin = "admin" 
         -> dealer = "dealer" 
-        -> reseller = "reseller"
+        -> customer = "customer"
+        -> employee = "employee"
 
 # newPOI
 

@@ -5,6 +5,7 @@
         -> admin = "admin" 
         -> dealer = "dealer" 
         -> customer = "customer"
+        -> employee = "employee"
 
 # newEmployee
 

@@ -2,9 +2,10 @@
 
 ## Request Header (new and delte need to pass : user_id,user_name,token)
     for development phase use token in list below but for production have to get from login method
-        -> admin = "admin"
-        -> dealer = "dealer"
-        -> reseller = "reseller"
+        -> admin = "admin" 
+        -> dealer = "dealer" 
+        -> customer = "customer"
+        -> employee = "employee"
 
 # newNews
 

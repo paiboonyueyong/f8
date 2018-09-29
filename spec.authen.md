@@ -5,6 +5,7 @@
         -> admin = "admin" 
         -> dealer = "dealer" 
         -> reseller = "reseller" change to -> "customer"
+        -> employee = employee
 
         !!!New -> customer able to create employee
 
@@ -23,7 +24,7 @@
 ## request body
 ```json
 {
-    "password": "newPassword""password": "newPassword"
+    "password": "newPassword"
 }
 
 ```
