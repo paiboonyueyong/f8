@@ -52,7 +52,8 @@
     "email": "paiboon.yue@gmail.com",
     "company_name": "simple corporation2",
     "line_api_token": "xxxyyyzzz",
-    "is_send_daily_report": true
+    "is_send_daily_report": true,
+    "is_create_subdealer": false /* new requirement */
 }
 ```
 ## response (if success)
@@ -106,6 +107,7 @@
             "line_api_token": "xxxyyyzzz",
             "password": "dealer128",
             "is_send_daily_report": true,
+            "is_create_subdealer": false, /* new requirement */
             "user_id": 3,
             "parent_id": 1,
             "user_level": 2,
@@ -151,6 +153,7 @@
             "line_api_token": "xxxyyyzzz",
             "password": "dealer128",
             "is_send_daily_report": true,
+            "is_create_subdealer": false, /* new requirement */
             "user_id": 3,
             "parent_id": 1,
             "user_level": 2,
@@ -168,6 +171,7 @@
             "line_api_token": "xxxyyyzzz",
             "password": "dealer128",
             "is_send_daily_report": true,
+            "is_create_subdealer": false, /* new requirement */
             "user_id": 5,
             "parent_id": "1",
             "user_level": 2,
