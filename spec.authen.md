@@ -23,7 +23,7 @@
 ## request body
 ```json
 {
-    "password": "newPassword"
+    "password": "newPassword""password": "newPassword"
 }
 
 ```
