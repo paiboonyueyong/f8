@@ -271,6 +271,8 @@
     http://{server}/setDeviceCarInfo/{device_id} 
 
 ## request body
+
+```json
 {
 	"device_group": "Group of Dead", // "จัดกลุ่ม"
 	"device_no": "4กท-2018", // "ทะเบียนรถ"
@@ -289,6 +291,7 @@
 	"petroleum_from_date": "11-10-2018", // "ตั้งค่าน้ำมัน เริ่มจากวันที่"
 	"petroleum_to_date": "01-11-2018" // "ตั้งค่าน้ำมัน ถึงวันที่"
 }
+```
 
 ## response (if success)
 
@@ -306,6 +309,7 @@
     http://{server}/setDevicePortInOut/{device_id} 
 
 ## request body
+```json
 [
     {
 	    "port_type": "Input", // Input/Output
@@ -326,6 +330,8 @@
 	    "command_id1": 2
 	}
 ]
+```
+
 
 ## response (if success)
 
@@ -343,6 +349,7 @@
     http://{server}/setDevicePortAnalog/{device_id} 
 
 ## request body
+```json
 [
 	{
 	    "port_type": "Analog",
@@ -356,6 +363,7 @@
 	    "extra_rank": "Extra rank"
 	}
 ]
+```
 
 ## response (if success)
 
@@ -373,6 +381,7 @@
     http://{server}/setDeviceSpacial/{device_id} 
 
 ## request body
+```json
 {
 	"is_send_dlt": true,  // ข้อมูลส่งกรมขนส่งทางบก
 	"is_send_scg": false,  // ข้อมูลส่ง SCG
@@ -392,6 +401,7 @@
 	"dlt_card_no": "0000000001",  // เลขบัตรส่งขนส่ง
 	"db_card_no": "ไม่มี"  // เลขบัตรในฐานข้อมูล (ex ไม่มี)
 }
+```
 
 ## response (if success)
 
@@ -409,6 +419,7 @@
     http://{server}/setDeviceAlert/{device_id} 
 
 ## request body
+```json
  [
     {
         "alert_type": "Big Cola กาญจนบุรี (100.0)", // ประเภทแจ้งเตือน
@@ -435,6 +446,7 @@
         }
     }
 ]
+```
 
 ## response (if success)
 
