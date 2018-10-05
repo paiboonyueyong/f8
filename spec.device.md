@@ -250,10 +250,12 @@
     http://{server}/assignDealer/{dealer_id} 
 
 ## request body
+```json
 [
   {"device_id": 19},
   {"device_id": 20}
 ]
+```
 
 ## response (if success)
 
@@ -271,7 +273,6 @@
     http://{server}/setDeviceCarInfo/{device_id} 
 
 ## request body
-
 ```json
 {
 	"device_group": "Group of Dead", // "จัดกลุ่ม"
@@ -291,6 +292,7 @@
 	"petroleum_from_date": "11-10-2018", // "ตั้งค่าน้ำมัน เริ่มจากวันที่"
 	"petroleum_to_date": "01-11-2018" // "ตั้งค่าน้ำมัน ถึงวันที่"
 }
+
 ```
 
 ## response (if success)
@@ -331,7 +333,6 @@
 	}
 ]
 ```
-
 
 ## response (if success)
 
@@ -389,7 +390,8 @@
 	"is_send_sccc": false,  // ข้อมูลส่ง SCCC
 	"is_send_post_office": false,  // ข้อมูลส่ง ไปรษณีย์
 	"dlt_group": 1,  // กลุ่มรถ ([1] รถติดตั้งอุปกรณ์ใหม่ ,[2] ติดตั้งก่อน 25 / 01 / 59,[3] รถวัตถุอันตราย,[99] ยกเลิก)
-	"file_attach": "",  // แนบไฟล์ (30 - 9130.jpg)
+	"file_name": ", // แนบไฟล์ (30 - 9130.jpg)
+    "file_attach": "Y29uc3QgX21vbmdvZGIgPSByZXF1aXJlKCdtb25nb2RiJyk7DQpjb25zdCBtb25nb2RiID0gcmVxdWlyZSgnLi9EQUwvbW9uZ29kYicpOw0KY29uc3QgbG9nZ2VyID0gcmVxdWlyZ==",  
 	"change_detail": "รายการใหม่",  // รายละเอียดการแก้ไขเปลี่ยนแปลง
 	"inform_date": "03-10-2018",  // วันที่แจ้ง
 	"car_type_id": 9,  // ประเภทรถ get จาก dorpdown
@@ -419,6 +421,7 @@
     http://{server}/setDeviceAlert/{device_id} 
 
 ## request body
+
 ```json
  [
     {
