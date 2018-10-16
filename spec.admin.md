@@ -28,8 +28,19 @@
     "RESULT_STATUS": "000",
     "RESULT_MESSAGE": "Successfull"
 }
+
 ```
 
+## response (if duplicate login name)
+
+```json
+{
+    "RESULT_DATA": [],
+    "RESULT_STATUS": "U01",
+    "RESULT_MESSAGE": "Duplicate Login Name"
+}
+
+```
 
 # updateAdmin
 
