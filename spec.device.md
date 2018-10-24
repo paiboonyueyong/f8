@@ -183,7 +183,10 @@
       "chassis": "MMKST22P805100902", 
       "company": "บริษัท ไทยในประเทศ", 
       "dlt_card_no": "0000000001",  
-      "db_card_no": "ไม่มี" 
+      "db_card_no": "ไม่มี",
+      "fix_place": "อู่ซ่อม",
+      "fix_place_start_date": "20-10-2018",
+      "fix_place_finish_date": "30-10-2018"
   }
 }
 ```
@@ -336,7 +339,10 @@
                 "chassis": "MMKST22P805100902",
                 "company": "บริษัท ไทยในประเทศ",
                 "dlt_card_no": "0000000001",
-                "db_card_no": "ไม่มี"
+                "db_card_no": "ไม่มี",
+                "fix_place": "อู่ซ่อม",
+                "fix_place_start_date": "20-10-2018",
+                "fix_place_finish_date": "30-10-2018"
             },
             "alert": [
                 {
@@ -404,8 +410,8 @@
             "device_group": "7-11",
             "device_model": "Altis",
             "device_no": "ฉล-4112",
-            "expire_date": "2019-10-05T00:00:00.000Z",
-            "install_date": "2018-10-05T00:00:00.000Z",
+            "expire_date": "05-10-2019",
+            "install_date": "05-10-2018",
             "is_dlt_alert": false,
             "speed_limit": 100,
             "stock_on_user_id": 0
@@ -578,5 +584,71 @@
     "RESULT_STATUS": "000",
     "RESULT_MESSAGE": "Successfull",
     "RESULT_TOTAL": 5
+}
+```
+
+# addDeviceAlert
+
+## url
+    http://{server}/addDeviceAlert/{device_id}
+
+## request body
+```json
+{
+  "alert_type": "Big Cola กาญจนบุรี (100.0)",
+  "alert_when": "ออกจาก",
+  "alert_channel": {
+    "email": true,
+    "line": true
+  }
+}
+```
+
+## response (if success)
+```json
+{
+    "RESULT_DATA": [],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+```
+
+# updateDeviceAlert
+
+## url
+    http://{server}/updateDeviceAlert/{device_id}/{alert_id}
+
+## request body
+```json
+{
+  "alert_type": "Big Cola กาญจนบุรี (100.0)",
+  "alert_when": "เข้าสู่",
+  "alert_channel": {
+    "email": true,
+    "line": true
+  }
+}
+```
+
+## response (if success)
+```json
+{
+    "RESULT_DATA": [],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+```
+
+## url
+    http://{server}/deleteDeviceAlert/{device_id}/{alert_id}
+
+## request body
+
+## response (if success)
+```json
+{
+    "RESULT_DATA": [],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
 }
 ```
