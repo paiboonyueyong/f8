@@ -344,30 +344,44 @@
                 "fix_place_start_date": "20-10-2018",
                 "fix_place_finish_date": "30-10-2018"
             },
-            "alert": [
+            "alert":  [
                 {
-                    "alert_type": "Big Cola กาญจนบุรี (100.0)",
-                    "alert_when": "เข้าสู่",
-                    "alert_channel": {
-                        "email": true,
-                        "line": true
-                    }
+                    "alert_type_id" : 1,
+                    "alert_type": "เครื่องยนต์",
+                    "alert_group" : "STATE",
+                    "alert_when" : "0",
+                    "alert_channel" : {
+                        "email" : true,
+                        "line" : true
+                    },
+                    "alert_id" : 56,
+                    "alert_last_dtm" : "",
+                    "is_alert" : false
                 },
                 {
-                    "alert_type": "เครื่องยนต์",
-                    "alert_when": "ติดเครื่อง",
-                    "alert_channel": {
-                        "email": true,
-                        "line": true
-                    }
+                    "alert_type_id" : 10,
+                    "alert_type": "หมู่บ้านพฤกษาวิลเวล-33xx-ss 29",
+                    "alert_group" : "POI",
+                    "alert_when" : "I",
+                    "alert_channel" : {
+                        "email" : true,
+                        "line" : true
+                    },
+                    "alert_id" : 57,
+                    "alert_last_dtm" : "",
+                    "is_alert" : false
                 },
                 {
-                    "alert_type": "เครื่องยนต์",
-                    "alert_when": "ดับเครื่อง",
-                    "alert_channel": {
-                        "email": true,
-                        "line": true
-                    }
+                    "alert_type_id" : 5,
+                    "alert_type": "หยุดนอก POI เกิน 10 นาที",
+                    "alert_group" : "OTHER",
+                    "alert_channel" : {
+                        "email" : true,
+                        "line" : true
+                    },
+                    "alert_id" : 59,
+                    "alert_last_dtm" : "",
+                    "is_alert" : false
                 }
             ]
         }
@@ -595,12 +609,13 @@
 ## request body
 ```json
 {
-  "alert_type": "Big Cola กาญจนบุรี (100.0)",
-  "alert_when": "ออกจาก",
-  "alert_channel": {
-    "email": true,
-    "line": true
-  }
+	"alert_type_id": 1,
+	"alert_group": "STATE",
+	"alert_when": "0",	//สำหรับ state {0 = ดับ, 1 = ติด}, สำหรับ POI {I = in, O = out}
+	"alert_channel": {
+		"email": true,
+		"line": true
+	}
 }
 ```
 
@@ -621,12 +636,13 @@
 ## request body
 ```json
 {
-  "alert_type": "Big Cola กาญจนบุรี (100.0)",
-  "alert_when": "เข้าสู่",
-  "alert_channel": {
-    "email": true,
-    "line": true
-  }
+    "alert_type_id": 10,
+	"alert_group": "POI",
+	"alert_when": "I",	//สำหรับ state {0 = ดับ, 1 = ติด}, สำหรับ POI {I = in, O = out}
+	"alert_channel": {
+		"email": true,
+		"line": true
+	}
 }
 ```
 
