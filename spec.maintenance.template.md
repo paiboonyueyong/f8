@@ -1,11 +1,10 @@
-# Maintenance Template Management
+# Maintenance Template
 
 ## Request Header (alway pass : user_id,user_name,token)
     for development phase use token in list below but for production have to get from login method
-        -> admin = "admin" 
-        -> dealer = "dealer" 
-        -> customer = "customer"
-        -> employee = "employee"
+        -> admin = "admin"
+        -> dealer = "dealer"
+        -> reseller = "reseller"
 
 # newMATemplate
 
@@ -61,7 +60,7 @@
     "RESULT_MESSAGE": "Successfull"
 }
 ```
-# getMAMeasureTypeList
+# getMATemplateList
 
 ## url
     http://{server}/getMATemplateList/{pageNumber}/{pageSize} 
@@ -76,12 +75,12 @@
 {
     "RESULT_DATA": [
         {
-            "name": "ถ่ายน้ำมันเครื่อง เปลี่ยนไส้กรอง",
+            "name": "ถ่ายน้ำมันเครื่อง และ เปลี่ยนไส้กรอง",
             "ma_list": [
                 {
                     "ma_name": "น้ำมันเครื่อง",
                     "measure_type_id": 3,
-                    "alert_repeat": 5000,
+                    "alert_repeat": 10000,
                     "is_email_alert": true,
                     "is_line_alert": false,
                     "measure_type": "ชั่วโมงการทำงาน",
@@ -90,7 +89,7 @@
                 {
                     "ma_name": "เปลี่ยนกรองอากาศ",
                     "measure_type_id": 3,
-                    "alert_repeat": 5000,
+                    "alert_repeat": 10000,
                     "is_email_alert": true,
                     "is_line_alert": false,
                     "measure_type": "ชั่วโมงการทำงาน",
@@ -101,7 +100,8 @@
             "create_user": "Wutthin",
             "last_upd_user": "Wutthin",
             "create_dtm": "2018-09-20T18:30:39.034Z",
-            "last_upd_dtm": "2018-09-20T18:30:39.034Z"
+            "last_upd_dtm": "2018-09-20T19:47:10.577Z",
+            "ma_size": 2
         }
     ],
     "RESULT_STATUS": "000",
