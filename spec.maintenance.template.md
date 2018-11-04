@@ -29,7 +29,6 @@
             "alert_repeat":5000,
             "is_email_alert": true,
             "is_line_alert": false
-
         }
     ]
 }
@@ -63,7 +62,7 @@
 # getMATemplateList
 
 ## url
-    http://{server}/getMATemplateList/{pageNumber}/{pageSize} 
+    http://{server}/getMATemplateList 
 
 ## request body
 {
@@ -190,5 +189,18 @@
     "RESULT_DATA": [],
     "RESULT_STATUS": "000",
     "RESULT_MESSAGE": "Successfull"
+}
+```
+
+# newMATemplateByDevice
+
+## url
+    http://{server}/newMATemplateByDevice
+
+## request body
+```json
+{
+    "name": "ถ่ายน้ำมันเครื่อง เปลี่ยนไส้กรอง",
+    "device_id": 18662
 }
 ```
