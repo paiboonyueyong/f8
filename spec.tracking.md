@@ -16,8 +16,19 @@
 
 ```json
 
-{    
-	"filter":"VIGO"
+{
+ "filter" : [{
+            "imei": "868998031020627",
+            "device_id": 18685,
+            "device_no": "18685",
+            "id": "111"
+        },
+        {
+            "imei": "868998031020628",
+            "device_id": 18686,
+            "device_no": "18686",
+            "id": "1"
+        }]
 }
 
 ```
@@ -57,6 +68,41 @@
     "RESULT_STATUS": "000",
     "RESULT_MESSAGE": "Successfull",
     "RESULT_TOTAL": 1
+}
+
+```
+
+
+# getNearTrackingList
+
+## url
+    http://{server2}/getNearTrackingList/{poiId}
+
+## no request body
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": [
+        {
+            "device_no": "1กท-1287",
+            "status": "ดับ",
+            "distance": 263.86
+        },
+        {
+            "device_no": "ID5",
+            "status": "ดับ",
+            "distance": 263.872
+        },
+        {
+            "device_no": "T333/30s",
+            "status": "จอด",
+            "distance": 267.511
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
 }
 
 ```
