@@ -128,7 +128,11 @@
 
 ```json
 {
-    "RESULT_DATA": "ต.หนองขนาน อ.เมืองเพชรบุรี จ.เพชรบุรี",
+    "RESULT_DATA": [
+        {
+            "address": "ต.หนองขนาน อ.เมืองเพชรบุรี จ.เพชรบุรี"
+        }
+    ],
     "RESULT_STATUS": "000",
     "RESULT_MESSAGE": "Successfull"
 }
