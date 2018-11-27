@@ -108,7 +108,7 @@
 ```
 
 
-# getNearTrackingList
+# getAddressLocation
 
 ## url
     http://{server2}/getAddressLocation/
