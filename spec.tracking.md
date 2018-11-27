@@ -106,3 +106,31 @@
 }
 
 ```
+
+
+# getNearTrackingList
+
+## url
+    http://{server2}/getAddressLocation/
+
+## body
+
+```json
+
+{
+	"latitude":13,
+	"longitude":100
+}
+
+```
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": "ต.หนองขนาน อ.เมืองเพชรบุรี จ.เพชรบุรี",
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+
+```
