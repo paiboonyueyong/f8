@@ -138,3 +138,150 @@
 }
 
 ```
+
+
+# getProvinceList
+
+## url
+    http://{server2}/getProvinceList/
+
+## no request body
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": [
+        {
+            "PROV_CODE": "81",
+            "PROV_NAMT": "กระบี่"
+        },
+        {
+            "PROV_CODE": "10",
+            "PROV_NAMT": "กรุงเทพมหานคร"
+        },
+        {
+            "PROV_CODE": "71",
+            "PROV_NAMT": "กาญจนบุรี"
+        },
+        {
+            "PROV_CODE": "46",
+            "PROV_NAMT": "กาฬสินธุ์"
+        },
+        {
+            "PROV_CODE": "62",
+            "PROV_NAMT": "กำแพงเพชร"
+        },
+        {
+            "PROV_CODE": "40",
+            "PROV_NAMT": "ขอนแก่น"
+        },
+        {
+            "PROV_CODE": "22",
+            "PROV_NAMT": "จันทบุรี"
+        },
+        {
+            "PROV_CODE": "24",
+            "PROV_NAMT": "ฉะเชิงเทรา"
+        },
+        
+        { 
+            "...": "..."
+        },
+        {
+            "PROV_CODE": "58",
+            "PROV_NAMT": "แม่ฮ่องสอน"
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+
+```
+
+
+# getDistrictList
+
+## url
+    http://{server2}/getDistrictList/{provCode}
+
+## no request body
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": [
+        {
+            "SUBDISTRICT_CODE": "06",
+            "SUBDISTRICT_NAME": "ขุมทอง"
+        },
+        {
+            "SUBDISTRICT_CODE": "02",
+            "SUBDISTRICT_NAME": "คลองสองต้นนุ่น"
+        },
+        {
+            "SUBDISTRICT_CODE": "03",
+            "SUBDISTRICT_NAME": "คลองสามประเวศ"
+        },
+        {
+            "SUBDISTRICT_CODE": "05",
+            "SUBDISTRICT_NAME": "ทับยาว"
+        },
+        {
+            "SUBDISTRICT_CODE": "01",
+            "SUBDISTRICT_NAME": "ลาดกระบัง"
+        },
+        {
+            "SUBDISTRICT_CODE": "04",
+            "SUBDISTRICT_NAME": "ลำปลาทิว"
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+
+```
+
+# getSubDistrictList
+
+## url
+    http://{server2}/getSubDistrictList/{provCode}/{districtCode}
+
+## no request body
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": [
+        {
+            "SUBDISTRICT_CODE": "06",
+            "SUBDISTRICT_NAME": "ขุมทอง"
+        },
+        {
+            "SUBDISTRICT_CODE": "02",
+            "SUBDISTRICT_NAME": "คลองสองต้นนุ่น"
+        },
+        {
+            "SUBDISTRICT_CODE": "03",
+            "SUBDISTRICT_NAME": "คลองสามประเวศ"
+        },
+        {
+            "SUBDISTRICT_CODE": "05",
+            "SUBDISTRICT_NAME": "ทับยาว"
+        },
+        {
+            "SUBDISTRICT_CODE": "01",
+            "SUBDISTRICT_NAME": "ลาดกระบัง"
+        },
+        {
+            "SUBDISTRICT_CODE": "04",
+            "SUBDISTRICT_NAME": "ลำปลาทิว"
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+
+```
