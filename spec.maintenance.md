@@ -130,7 +130,8 @@
             "is_line_alert": false,
             "counter": 2500,
             "next_alert_when": "177010",
-            "ma_list_id": 921
+            "ma_list_id": 921,
+            "remark": "ทดสอบ"
         },
         {
             "ma_name": "เปลี่ยนกรองอากาศ",
@@ -140,7 +141,8 @@
             "is_line_alert": false,
             "counter": 5000,
             "next_alert_when": "182010",
-            "ma_list_id": 922
+            "ma_list_id": 922,
+            "remark": "ทดสอบ"
         },
         {
             "ma_name": "เติมน้ำหม้อน้ำ",
@@ -150,7 +152,8 @@
             "is_line_alert": false,
             "counter": 2,
             "next_alert_when": "8",
-            "ma_list_id": 923
+            "ma_list_id": 923,
+            "remark": "ทดสอบ"
         },
         {
             "ma_name": "วัดน้ำมันเครื่อง",
@@ -160,7 +163,8 @@
             "is_line_alert": false,
             "counter": 0,
             "next_alert_when": "10-11-2018",
-            "ma_list_id": 924
+            "ma_list_id": 924,
+            "remark": "ทดสอบ"
         },
         {
             "ma_name": "เปลี่ยนยาง",
@@ -169,7 +173,8 @@
             "is_email_alert": true,
             "is_line_alert": false,
             "counter": 0,
-            "next_alert_when": "10-11-2018"
+            "next_alert_when": "10-11-2018",
+            "remark": "ทดสอบ"
         }
     ]
 }
@@ -209,6 +214,10 @@
     http://{server}/getMaintenanceAlertList 
 
 ## request body
+{
+    "filter" : "",
+    "isGroupOrder" : true
+}
 
 ## response (if success)
 
@@ -229,7 +238,8 @@
             "measure_type": "ระยะทางการวิ่ง",
             "measure_unit": "กม",
             "device_id": 18662,
-            "device_no": "1กท-1287"
+            "device_no": "1กท-1287",
+            "device_group": "Group"
         },
         {
             "ma_name": "เปลี่ยนกรองอากาศ",
@@ -246,7 +256,8 @@
             "measure_type": "ระยะทางการวิ่ง",
             "measure_unit": "กม",
             "device_id": 18665,
-            "device_no": "1ศย-2240"
+            "device_no": "1ศย-2240",
+            "device_group": "Group"
         },
         {
             "ma_name": "เปลี่ยนยาง",
@@ -263,7 +274,8 @@
             "measure_type": "ชั่วโมงการทำงาน",
             "measure_unit": "ชม",
             "device_id": 18665,
-            "device_no": "1ศย-2240"
+            "device_no": "1ศย-2240",
+            "device_group": "Group"
         }
     ],
     "RESULT_STATUS": "000",

@@ -60,6 +60,7 @@
     "device_no": "4กท-2018", // "ทะเบียนรถ"
     "device_model": "Fortuner", // "รุ่นรถ"
     "device_driver": "", // "คนขับรถ"
+    "driver_id": "", // "คนขับรถ"
     "speed_limit": 90, // "จำกัดความเร็ว กม./ชม."
     "petroleum_km_rate": 11, // "อัตราการใช้น้ำมัน กม./ลิตร"
     "petroleum_liter_rate": 20, // "อัตราการใช้น้ำมัน ลิตร/ชม."
@@ -609,7 +610,7 @@
 ## request body
 ```json
 {
-	"alert_type_id": 1,
+	"alert_type_id": "1",
 	"alert_group": "STATE",
 	"alert_when": "0",	//สำหรับ state {0 = ดับ, 1 = ติด}, สำหรับ POI {I = in, O = out}
 	"alert_channel": {
@@ -636,7 +637,7 @@
 ## request body
 ```json
 {
-    "alert_type_id": 10,
+    "alert_type_id": "10",
 	"alert_group": "POI",
 	"alert_when": "I",	//สำหรับ state {0 = ดับ, 1 = ติด}, สำหรับ POI {I = in, O = out}
 	"alert_channel": {
