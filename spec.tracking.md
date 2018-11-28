@@ -213,28 +213,204 @@
 {
     "RESULT_DATA": [
         {
-            "SUBDISTRICT_CODE": "06",
-            "SUBDISTRICT_NAME": "ขุมทอง"
+            "DISTRICT_CODE": "18",
+            "DISTRICT_NAME": "คลองสาน"
         },
         {
-            "SUBDISTRICT_CODE": "02",
-            "SUBDISTRICT_NAME": "คลองสองต้นนุ่น"
+            "DISTRICT_CODE": "46",
+            "DISTRICT_NAME": "คลองสามวา"
         },
         {
-            "SUBDISTRICT_CODE": "03",
-            "SUBDISTRICT_NAME": "คลองสามประเวศ"
+            "DISTRICT_CODE": "33",
+            "DISTRICT_NAME": "คลองเตย"
         },
         {
-            "SUBDISTRICT_CODE": "05",
-            "SUBDISTRICT_NAME": "ทับยาว"
+            "DISTRICT_CODE": "43",
+            "DISTRICT_NAME": "คันนายาว"
         },
         {
-            "SUBDISTRICT_CODE": "01",
-            "SUBDISTRICT_NAME": "ลาดกระบัง"
+            "DISTRICT_CODE": "30",
+            "DISTRICT_NAME": "จตุจักร"
         },
         {
-            "SUBDISTRICT_CODE": "04",
-            "SUBDISTRICT_NAME": "ลำปลาทิว"
+            "DISTRICT_CODE": "35",
+            "DISTRICT_NAME": "จอมทอง"
+        },
+        {
+            "DISTRICT_CODE": "36",
+            "DISTRICT_NAME": "ดอนเมือง"
+        },
+        {
+            "DISTRICT_CODE": "26",
+            "DISTRICT_NAME": "ดินแดง"
+        },
+        {
+            "DISTRICT_CODE": "02",
+            "DISTRICT_NAME": "ดุสิต"
+        },
+        {
+            "DISTRICT_CODE": "19",
+            "DISTRICT_NAME": "ตลิ่งชัน"
+        },
+        {
+            "DISTRICT_CODE": "48",
+            "DISTRICT_NAME": "ทวีวัฒนา"
+        },
+        {
+            "DISTRICT_CODE": "49",
+            "DISTRICT_NAME": "ทุ่งครุ"
+        },
+        {
+            "DISTRICT_CODE": "15",
+            "DISTRICT_NAME": "ธนบุรี"
+        },
+        {
+            "DISTRICT_CODE": "20",
+            "DISTRICT_NAME": "บางกอกน้อย"
+        },
+        {
+            "DISTRICT_CODE": "16",
+            "DISTRICT_NAME": "บางกอกใหญ่"
+        },
+        {
+            "DISTRICT_CODE": "06",
+            "DISTRICT_NAME": "บางกะปิ"
+        },
+        {
+            "DISTRICT_CODE": "21",
+            "DISTRICT_NAME": "บางขุนเทียน"
+        },
+        {
+            "DISTRICT_CODE": "31",
+            "DISTRICT_NAME": "บางคอแหลม"
+        },
+        {
+            "DISTRICT_CODE": "29",
+            "DISTRICT_NAME": "บางซื่อ"
+        },
+        {
+            "DISTRICT_CODE": "47",
+            "DISTRICT_NAME": "บางนา"
+        },
+        {
+            "DISTRICT_CODE": "50",
+            "DISTRICT_NAME": "บางบอน"
+        },
+        {
+            "DISTRICT_CODE": "25",
+            "DISTRICT_NAME": "บางพลัด"
+        },
+        {
+            "DISTRICT_CODE": "04",
+            "DISTRICT_NAME": "บางรัก"
+        },
+        {
+            "DISTRICT_CODE": "05",
+            "DISTRICT_NAME": "บางเขน"
+        },
+        {
+            "DISTRICT_CODE": "40",
+            "DISTRICT_NAME": "บางแค"
+        },
+        {
+            "DISTRICT_CODE": "27",
+            "DISTRICT_NAME": "บึงกุ่ม"
+        },
+        {
+            "DISTRICT_CODE": "07",
+            "DISTRICT_NAME": "ปทุมวัน"
+        },
+        {
+            "DISTRICT_CODE": "32",
+            "DISTRICT_NAME": "ประเวศ"
+        },
+        {
+            "DISTRICT_CODE": "08",
+            "DISTRICT_NAME": "ป้อมปราบศัตรูพ่าย"
+        },
+        {
+            "DISTRICT_CODE": "14",
+            "DISTRICT_NAME": "พญาไท"
+        },
+        {
+            "DISTRICT_CODE": "01",
+            "DISTRICT_NAME": "พระนคร"
+        },
+        {
+            "DISTRICT_CODE": "09",
+            "DISTRICT_NAME": "พระโขนง"
+        },
+        {
+            "DISTRICT_CODE": "22",
+            "DISTRICT_NAME": "ภาษีเจริญ"
+        },
+        {
+            "DISTRICT_CODE": "10",
+            "DISTRICT_NAME": "มีนบุรี"
+        },
+        {
+            "DISTRICT_CODE": "12",
+            "DISTRICT_NAME": "ยานนาวา"
+        },
+        {
+            "DISTRICT_CODE": "37",
+            "DISTRICT_NAME": "ราชเทวี"
+        },
+        {
+            "DISTRICT_CODE": "24",
+            "DISTRICT_NAME": "ราษฎร์บูรณะ"
+        },
+        {
+            "DISTRICT_CODE": "11",
+            "DISTRICT_NAME": "ลาดกระบัง"
+        },
+        {
+            "DISTRICT_CODE": "38",
+            "DISTRICT_NAME": "ลาดพร้าว"
+        },
+        {
+            "DISTRICT_CODE": "45",
+            "DISTRICT_NAME": "วังทองหลาง"
+        },
+        {
+            "DISTRICT_CODE": "39",
+            "DISTRICT_NAME": "วัฒนา"
+        },
+        {
+            "DISTRICT_CODE": "34",
+            "DISTRICT_NAME": "สวนหลวง"
+        },
+        {
+            "DISTRICT_CODE": "44",
+            "DISTRICT_NAME": "สะพานสูง"
+        },
+        {
+            "DISTRICT_CODE": "13",
+            "DISTRICT_NAME": "สัมพันธวงศ์"
+        },
+        {
+            "DISTRICT_CODE": "28",
+            "DISTRICT_NAME": "สาทร"
+        },
+        {
+            "DISTRICT_CODE": "42",
+            "DISTRICT_NAME": "สายไหม"
+        },
+        {
+            "DISTRICT_CODE": "03",
+            "DISTRICT_NAME": "หนองจอก"
+        },
+        {
+            "DISTRICT_CODE": "23",
+            "DISTRICT_NAME": "หนองแขม"
+        },
+        {
+            "DISTRICT_CODE": "41",
+            "DISTRICT_NAME": "หลักสี่"
+        },
+        {
+            "DISTRICT_CODE": "17",
+            "DISTRICT_NAME": "ห้วยขวาง"
         }
     ],
     "RESULT_STATUS": "000",
