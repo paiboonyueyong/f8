@@ -461,3 +461,42 @@
 }
 
 ```
+
+# getAreaTrackingList
+
+## url
+    http://{server2}/getAreaTrackingList/{provCode}/{districtCode}/{subDistrictCode}
+
+    No specific area send 0
+
+    example
+
+    http://{server2}/getAreaTrackingList/10/0/0
+    http://{server2}/getAreaTrackingList/10/10/0
+    http://{server2}/getAreaTrackingList/10/10/10
+
+## no request body
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": [
+        {
+            "device_no": "T333/30s",
+            "status": "จอด"
+        },
+        {
+            "device_no": "ID5",
+            "status": "ดับ"
+        },
+        {
+            "device_no": "1กย-1287",
+            "status": "ดับ"
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+
+```
