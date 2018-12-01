@@ -32,7 +32,7 @@
                     "next_alert_when": "177010",
                     "ma_list_id": 963,
                     "is_alert": false,
-                    "last_alert_dtm": "01-11-2018 23:38:29",
+                    "last_alert_dtm": "1 พ.ย. 2561 23:38",
                     "measure_type": "ระยะทางการวิ่ง",
                     "measure_unit": "กม"
                 },
@@ -46,7 +46,7 @@
                     "next_alert_when": "182010",
                     "ma_list_id": 964,
                     "is_alert": true,
-                    "last_alert_dtm": "01-11-2018 23:38:29",
+                    "last_alert_dtm": "1 พ.ย. 2561 23:38",
                     "measure_type": "ระยะทางการวิ่ง",
                     "measure_unit": "กม"
                 },
@@ -97,7 +97,7 @@
                     "ma_name": "น้ำมันเครื่อง",
                     "alert_when": "177010",
                     "alert_repeat": 5000,
-                    "last_alert_dtm": "01-11-2018 23:38:29",
+                    "last_alert_dtm": "1 พ.ย. 2561 23:38",
                     "measure_type": "ระยะทางการวิ่ง",
                     "measure_unit": "กม"
                 }
@@ -211,7 +211,7 @@
 # getMaintenanceAlertList
 
 ## url
-    http://{server}/getMaintenanceAlertList 
+    http://{server}/getMaintenanceAlertList/{pageNo}/{pageSize}
 
 ## request body
 {
@@ -239,7 +239,8 @@
             "measure_unit": "กม",
             "device_id": 18662,
             "device_no": "1กท-1287",
-            "device_group": "Group"
+            "device_group": "Group",
+            "remark": "หมายเหตุ"
         },
         {
             "ma_name": "เปลี่ยนกรองอากาศ",
@@ -257,7 +258,8 @@
             "measure_unit": "กม",
             "device_id": 18665,
             "device_no": "1ศย-2240",
-            "device_group": "Group"
+            "device_group": "Group",
+            "remark": "หมายเหตุ"
         },
         {
             "ma_name": "เปลี่ยนยาง",
@@ -275,7 +277,8 @@
             "measure_unit": "ชม",
             "device_id": 18665,
             "device_no": "1ศย-2240",
-            "device_group": "Group"
+            "device_group": "Group",
+            "remark": "หมายเหตุ"
         }
     ],
     "RESULT_STATUS": "000",
@@ -303,7 +306,8 @@
             "is_email_alert": true,
             "is_line_alert": false,
 		    "counter": 2500,
-            "next_alert_when": "177010"
+            "next_alert_when": "177010",
+            "remark": "หมายเหตุ"
         },
         {
             "ma_name": "เปลี่ยนกรองอากาศ",
@@ -312,7 +316,8 @@
             "is_email_alert": true,
             "is_line_alert": false,
 		    "counter": 5000,
-            "next_alert_when": "182010"
+            "next_alert_when": "182010",
+            "remark": "หมายเหตุ"
         },
         {
             "ma_name": "เติมน้ำหม้อน้ำ",
@@ -321,7 +326,8 @@
             "is_email_alert": true,
             "is_line_alert": false,
 		    "counter": 2,
-            "next_alert_when": "8"
+            "next_alert_when": "8",
+            "remark": "หมายเหตุ"
         },
         {
             "ma_name": "วัดน้ำมันเครื่อง",
@@ -330,7 +336,8 @@
             "is_email_alert": true,
             "is_line_alert": false,
 		    "counter": 0,
-            "next_alert_when": "10-11-2018"
+            "next_alert_when": "10-11-2018",
+            "remark": "หมายเหตุ"
         }
     ]
 }
@@ -345,11 +352,29 @@
 }
 ```
 
-# deleteMATemplate
+# deleteMaintenance
     Maybe not use because if pass ma_list is [] in update method then auto delete
 
 ## url
     http://{server}/deleteMaintenance/{device_id} 
+
+## request body
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": [],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+```
+
+# moveMaintenance
+    Move maintenance list to another device
+
+## url
+    http://{server}/moveMaintenance/{device_id}/{new_device_id}
 
 ## request body
 
