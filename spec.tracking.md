@@ -153,45 +153,38 @@
 {
     "RESULT_DATA": [
         {
-            "PROV_CODE": "81",
-            "PROV_NAMT": "กระบี่"
+            "prov_code": "81",
+            "prov_name": "กระบี่",
+            "extent": {
+                "minx": 98.611598,
+                "miny": 7.467277,
+                "maxx": 99.414993,
+                "maxy": 8.68184
+            }
         },
         {
-            "PROV_CODE": "10",
-            "PROV_NAMT": "กรุงเทพมหานคร"
+            "prov_code": "10",
+            "prov_name": "กรุงเทพมหานคร",
+            "extent": {
+                "minx": 100.327912,
+                "miny": 13.49339,
+                "maxx": 100.938516,
+                "maxy": 13.955198
+            }
         },
-        {
-            "PROV_CODE": "71",
-            "PROV_NAMT": "กาญจนบุรี"
-        },
-        {
-            "PROV_CODE": "46",
-            "PROV_NAMT": "กาฬสินธุ์"
-        },
-        {
-            "PROV_CODE": "62",
-            "PROV_NAMT": "กำแพงเพชร"
-        },
-        {
-            "PROV_CODE": "40",
-            "PROV_NAMT": "ขอนแก่น"
-        },
-        {
-            "PROV_CODE": "22",
-            "PROV_NAMT": "จันทบุรี"
-        },
-        {
-            "PROV_CODE": "24",
-            "PROV_NAMT": "ฉะเชิงเทรา"
-        },
-        
         { 
             "...": "..."
         },
         {
-            "PROV_CODE": "58",
-            "PROV_NAMT": "แม่ฮ่องสอน"
-        }
+            "prov_code": "71",
+            "prov_name": "กาญจนบุรี",
+            "extent": {
+                "minx": 98.181068,
+                "miny": 13.725532,
+                "maxx": 99.879323,
+                "maxy": 15.66074
+            }
+        },
     ],
     "RESULT_STATUS": "000",
     "RESULT_MESSAGE": "Successfull"
@@ -213,204 +206,504 @@
 {
     "RESULT_DATA": [
         {
-            "DISTRICT_CODE": "18",
-            "DISTRICT_NAME": "คลองสาน"
+            "district_code": "18",
+            "district_name": "คลองสาน",
+            "extent": {
+                "minx": 100.492206,
+                "miny": 13.705137,
+                "maxx": 100.512712,
+                "maxy": 13.739218
+            }
         },
         {
-            "DISTRICT_CODE": "46",
-            "DISTRICT_NAME": "คลองสามวา"
+            "district_code": "46",
+            "district_name": "คลองสามวา",
+            "extent": {
+                "minx": 100.670762,
+                "miny": 13.815493,
+                "maxx": 100.799463,
+                "maxy": 13.931409
+            }
         },
         {
-            "DISTRICT_CODE": "33",
-            "DISTRICT_NAME": "คลองเตย"
+            "district_code": "33",
+            "district_name": "คลองเตย",
+            "extent": {
+                "minx": 100.550695,
+                "miny": 13.696096,
+                "maxx": 100.601659,
+                "maxy": 13.742849
+            }
         },
         {
-            "DISTRICT_CODE": "43",
-            "DISTRICT_NAME": "คันนายาว"
+            "district_code": "43",
+            "district_name": "คันนายาว",
+            "extent": {
+                "minx": 100.645987,
+                "miny": 13.781206,
+                "maxx": 100.704964,
+                "maxy": 13.857255
+            }
         },
         {
-            "DISTRICT_CODE": "30",
-            "DISTRICT_NAME": "จตุจักร"
+            "district_code": "30",
+            "district_name": "จตุจักร",
+            "extent": {
+                "minx": 100.537117,
+                "miny": 13.794601,
+                "maxx": 100.591118,
+                "maxy": 13.858942
+            }
         },
         {
-            "DISTRICT_CODE": "35",
-            "DISTRICT_NAME": "จอมทอง"
+            "district_code": "35",
+            "district_name": "จอมทอง",
+            "extent": {
+                "minx": 100.4347,
+                "miny": 13.655675,
+                "maxx": 100.488983,
+                "maxy": 13.717891
+            }
         },
         {
-            "DISTRICT_CODE": "36",
-            "DISTRICT_NAME": "ดอนเมือง"
+            "district_code": "36",
+            "district_name": "ดอนเมือง",
+            "extent": {
+                "minx": 100.558893,
+                "miny": 13.887631,
+                "maxx": 100.626682,
+                "maxy": 13.955198
+            }
         },
         {
-            "DISTRICT_CODE": "26",
-            "DISTRICT_NAME": "ดินแดง"
+            "district_code": "26",
+            "district_name": "ดินแดง",
+            "extent": {
+                "minx": 100.543431,
+                "miny": 13.755126,
+                "maxx": 100.574896,
+                "maxy": 13.80107
+            }
         },
         {
-            "DISTRICT_CODE": "02",
-            "DISTRICT_NAME": "ดุสิต"
+            "district_code": "02",
+            "district_name": "ดุสิต",
+            "extent": {
+                "minx": 100.49904,
+                "miny": 13.752637,
+                "maxx": 100.537424,
+                "maxy": 13.800358
+            }
         },
         {
-            "DISTRICT_CODE": "19",
-            "DISTRICT_NAME": "ตลิ่งชัน"
+            "district_code": "19",
+            "district_name": "ตลิ่งชัน",
+            "extent": {
+                "minx": 100.406127,
+                "miny": 13.740006,
+                "maxx": 100.469658,
+                "maxy": 13.801348
+            }
         },
         {
-            "DISTRICT_CODE": "48",
-            "DISTRICT_NAME": "ทวีวัฒนา"
+            "district_code": "48",
+            "district_name": "ทวีวัฒนา",
+            "extent": {
+                "minx": 100.327912,
+                "miny": 13.736036,
+                "maxx": 100.411058,
+                "maxy": 13.804126
+            }
         },
         {
-            "DISTRICT_CODE": "49",
-            "DISTRICT_NAME": "ทุ่งครุ"
+            "district_code": "49",
+            "district_name": "ทุ่งครุ",
+            "extent": {
+                "minx": 100.47007,
+                "miny": 13.586158,
+                "maxx": 100.521038,
+                "maxy": 13.663071
+            }
         },
         {
-            "DISTRICT_CODE": "15",
-            "DISTRICT_NAME": "ธนบุรี"
+            "district_code": "15",
+            "district_name": "ธนบุรี",
+            "extent": {
+                "minx": 100.468536,
+                "miny": 13.694815,
+                "maxx": 100.498638,
+                "maxy": 13.742173
+            }
         },
         {
-            "DISTRICT_CODE": "20",
-            "DISTRICT_NAME": "บางกอกน้อย"
+            "district_code": "20",
+            "district_name": "บางกอกน้อย",
+            "extent": {
+                "minx": 100.453534,
+                "miny": 13.742949,
+                "maxx": 100.490972,
+                "maxy": 13.787616
+            }
         },
         {
-            "DISTRICT_CODE": "16",
-            "DISTRICT_NAME": "บางกอกใหญ่"
+            "district_code": "16",
+            "district_name": "บางกอกใหญ่",
+            "extent": {
+                "minx": 100.461602,
+                "miny": 13.72222,
+                "maxx": 100.49197,
+                "maxy": 13.748209
+            }
         },
         {
-            "DISTRICT_CODE": "06",
-            "DISTRICT_NAME": "บางกะปิ"
+            "district_code": "06",
+            "district_name": "บางกะปิ",
+            "extent": {
+                "minx": 100.601016,
+                "miny": 13.738385,
+                "maxx": 100.678887,
+                "maxy": 13.819398
+            }
         },
         {
-            "DISTRICT_CODE": "21",
-            "DISTRICT_NAME": "บางขุนเทียน"
+            "district_code": "21",
+            "district_name": "บางขุนเทียน",
+            "extent": {
+                "minx": 100.376482,
+                "miny": 13.49339,
+                "maxx": 100.481726,
+                "maxy": 13.682558
+            }
         },
         {
-            "DISTRICT_CODE": "31",
-            "DISTRICT_NAME": "บางคอแหลม"
+            "district_code": "31",
+            "district_name": "บางคอแหลม",
+            "extent": {
+                "minx": 100.489998,
+                "miny": 13.682679,
+                "maxx": 100.531761,
+                "maxy": 13.712461
+            }
         },
         {
-            "DISTRICT_CODE": "29",
-            "DISTRICT_NAME": "บางซื่อ"
+            "district_code": "29",
+            "district_name": "บางซื่อ",
+            "extent": {
+                "minx": 100.506277,
+                "miny": 13.797854,
+                "maxx": 100.545031,
+                "maxy": 13.849628
+            }
         },
         {
-            "DISTRICT_CODE": "47",
-            "DISTRICT_NAME": "บางนา"
+            "district_code": "47",
+            "district_name": "บางนา",
+            "extent": {
+                "minx": 100.579458,
+                "miny": 13.648503,
+                "maxx": 100.653792,
+                "maxy": 13.684429
+            }
         },
         {
-            "DISTRICT_CODE": "50",
-            "DISTRICT_NAME": "บางบอน"
+            "district_code": "50",
+            "district_name": "บางบอน",
+            "extent": {
+                "minx": 100.344676,
+                "miny": 13.619703,
+                "maxx": 100.446797,
+                "maxy": 13.693684
+            }
         },
         {
-            "DISTRICT_CODE": "25",
-            "DISTRICT_NAME": "บางพลัด"
+            "district_code": "25",
+            "district_name": "บางพลัด",
+            "extent": {
+                "minx": 100.465939,
+                "miny": 13.761929,
+                "maxx": 100.517672,
+                "maxy": 13.813275
+            }
         },
         {
-            "DISTRICT_CODE": "04",
-            "DISTRICT_NAME": "บางรัก"
+            "district_code": "04",
+            "district_name": "บางรัก",
+            "extent": {
+                "minx": 100.512032,
+                "miny": 13.718082,
+                "maxx": 100.544745,
+                "maxy": 13.738047
+            }
         },
         {
-            "DISTRICT_CODE": "05",
-            "DISTRICT_NAME": "บางเขน"
+            "district_code": "05",
+            "district_name": "บางเขน",
+            "extent": {
+                "minx": 100.586481,
+                "miny": 13.842544,
+                "maxx": 100.685775,
+                "maxy": 13.89978
+            }
         },
         {
-            "DISTRICT_CODE": "40",
-            "DISTRICT_NAME": "บางแค"
+            "district_code": "40",
+            "district_name": "บางแค",
+            "extent": {
+                "minx": 100.352677,
+                "miny": 13.66804,
+                "maxx": 100.427821,
+                "maxy": 13.753926
+            }
         },
         {
-            "DISTRICT_CODE": "27",
-            "DISTRICT_NAME": "บึงกุ่ม"
+            "district_code": "27",
+            "district_name": "บึงกุ่ม",
+            "extent": {
+                "minx": 100.624478,
+                "miny": 13.770707,
+                "maxx": 100.676567,
+                "maxy": 13.847368
+            }
         },
         {
-            "DISTRICT_CODE": "07",
-            "DISTRICT_NAME": "ปทุมวัน"
+            "district_code": "07",
+            "district_name": "ปทุมวัน",
+            "extent": {
+                "minx": 100.515674,
+                "miny": 13.722772,
+                "maxx": 100.552912,
+                "maxy": 13.7531
+            }
         },
         {
-            "DISTRICT_CODE": "32",
-            "DISTRICT_NAME": "ประเวศ"
+            "district_code": "32",
+            "district_name": "ประเวศ",
+            "extent": {
+                "minx": 100.634106,
+                "miny": 13.656329,
+                "maxx": 100.712385,
+                "maxy": 13.737862
+            }
         },
         {
-            "DISTRICT_CODE": "08",
-            "DISTRICT_NAME": "ป้อมปราบศัตรูพ่าย"
+            "district_code": "08",
+            "district_name": "ป้อมปราบศัตรูพ่าย",
+            "extent": {
+                "minx": 100.503898,
+                "miny": 13.738047,
+                "maxx": 100.517383,
+                "maxy": 13.763651
+            }
         },
         {
-            "DISTRICT_CODE": "14",
-            "DISTRICT_NAME": "พญาไท"
+            "district_code": "14",
+            "district_name": "พญาไท",
+            "extent": {
+                "minx": 100.527886,
+                "miny": 13.762716,
+                "maxx": 100.561985,
+                "maxy": 13.797854
+            }
         },
         {
-            "DISTRICT_CODE": "01",
-            "DISTRICT_NAME": "พระนคร"
+            "district_code": "01",
+            "district_name": "พระนคร",
+            "extent": {
+                "minx": 100.487645,
+                "miny": 13.738633,
+                "maxx": 100.509399,
+                "maxy": 13.772666
+            }
         },
         {
-            "DISTRICT_CODE": "09",
-            "DISTRICT_NAME": "พระโขนง"
+            "district_code": "09",
+            "district_name": "พระโขนง",
+            "extent": {
+                "minx": 100.58392,
+                "miny": 13.677935,
+                "maxx": 100.640236,
+                "maxy": 13.706842
+            }
         },
         {
-            "DISTRICT_CODE": "22",
-            "DISTRICT_NAME": "ภาษีเจริญ"
+            "district_code": "22",
+            "district_name": "ภาษีเจริญ",
+            "extent": {
+                "minx": 100.413361,
+                "miny": 13.687613,
+                "maxx": 100.471675,
+                "maxy": 13.747934
+            }
         },
         {
-            "DISTRICT_CODE": "10",
-            "DISTRICT_NAME": "มีนบุรี"
+            "district_code": "10",
+            "district_name": "มีนบุรี",
+            "extent": {
+                "minx": 100.696776,
+                "miny": 13.773224,
+                "maxx": 100.80801,
+                "maxy": 13.84929
+            }
         },
         {
-            "DISTRICT_CODE": "12",
-            "DISTRICT_NAME": "ยานนาวา"
+            "district_code": "12",
+            "district_name": "ยานนาวา",
+            "extent": {
+                "minx": 100.516982,
+                "miny": 13.668942,
+                "maxx": 100.554867,
+                "maxy": 13.719251
+            }
         },
         {
-            "DISTRICT_CODE": "37",
-            "DISTRICT_NAME": "ราชเทวี"
+            "district_code": "37",
+            "district_name": "ราชเทวี",
+            "extent": {
+                "minx": 100.519167,
+                "miny": 13.74789,
+                "maxx": 100.564969,
+                "maxy": 13.774338
+            }
         },
         {
-            "DISTRICT_CODE": "24",
-            "DISTRICT_NAME": "ราษฎร์บูรณะ"
+            "district_code": "24",
+            "district_name": "ราษฎร์บูรณะ",
+            "extent": {
+                "minx": 100.475564,
+                "miny": 13.652963,
+                "maxx": 100.523401,
+                "maxy": 13.695262
+            }
         },
         {
-            "DISTRICT_CODE": "11",
-            "DISTRICT_NAME": "ลาดกระบัง"
+            "district_code": "11",
+            "district_name": "ลาดกระบัง",
+            "extent": {
+                "minx": 100.706606,
+                "miny": 13.68956,
+                "maxx": 100.878833,
+                "maxy": 13.800391
+            }
         },
         {
-            "DISTRICT_CODE": "38",
-            "DISTRICT_NAME": "ลาดพร้าว"
+            "district_code": "38",
+            "district_name": "ลาดพร้าว",
+            "extent": {
+                "minx": 100.588341,
+                "miny": 13.794815,
+                "maxx": 100.637122,
+                "maxy": 13.849268
+            }
         },
         {
-            "DISTRICT_CODE": "45",
-            "DISTRICT_NAME": "วังทองหลาง"
+            "district_code": "45",
+            "district_name": "วังทองหลาง",
+            "extent": {
+                "minx": 100.588383,
+                "miny": 13.751201,
+                "maxx": 100.630655,
+                "maxy": 13.802839
+            }
         },
         {
-            "DISTRICT_CODE": "39",
-            "DISTRICT_NAME": "วัฒนา"
+            "district_code": "39",
+            "district_name": "วัฒนา",
+            "extent": {
+                "minx": 100.550075,
+                "miny": 13.704666,
+                "maxx": 100.606842,
+                "maxy": 13.748519
+            }
         },
         {
-            "DISTRICT_CODE": "34",
-            "DISTRICT_NAME": "สวนหลวง"
+            "district_code": "34",
+            "district_name": "สวนหลวง",
+            "extent": {
+                "minx": 100.598152,
+                "miny": 13.700762,
+                "maxx": 100.659177,
+                "maxy": 13.750121
+            }
         },
         {
-            "DISTRICT_CODE": "44",
-            "DISTRICT_NAME": "สะพานสูง"
+            "district_code": "44",
+            "district_name": "สะพานสูง",
+            "extent": {
+                "minx": 100.659011,
+                "miny": 13.732497,
+                "maxx": 100.716681,
+                "maxy": 13.798328
+            }
         },
         {
-            "DISTRICT_CODE": "13",
-            "DISTRICT_NAME": "สัมพันธวงศ์"
+            "district_code": "13",
+            "district_name": "สัมพันธวงศ์",
+            "extent": {
+                "minx": 100.499807,
+                "miny": 13.729393,
+                "maxx": 100.515909,
+                "maxy": 13.746848
+            }
         },
         {
-            "DISTRICT_CODE": "28",
-            "DISTRICT_NAME": "สาทร"
+            "district_code": "28",
+            "district_name": "สาทร",
+            "extent": {
+                "minx": 100.508171,
+                "miny": 13.700886,
+                "maxx": 100.553754,
+                "maxy": 13.726166
+            }
         },
         {
-            "DISTRICT_CODE": "42",
-            "DISTRICT_NAME": "สายไหม"
+            "district_code": "42",
+            "district_name": "สายไหม",
+            "extent": {
+                "minx": 100.608697,
+                "miny": 13.874248,
+                "maxx": 100.692368,
+                "maxy": 13.950251
+            }
         },
         {
-            "DISTRICT_CODE": "03",
-            "DISTRICT_NAME": "หนองจอก"
+            "district_code": "03",
+            "district_name": "หนองจอก",
+            "extent": {
+                "minx": 100.787422,
+                "miny": 13.737877,
+                "maxx": 100.938516,
+                "maxy": 13.946491
+            }
         },
         {
-            "DISTRICT_CODE": "23",
-            "DISTRICT_NAME": "หนองแขม"
+            "district_code": "23",
+            "district_name": "หนองแขม",
+            "extent": {
+                "minx": 100.330228,
+                "miny": 13.654708,
+                "maxx": 100.385253,
+                "maxy": 13.738002
+            }
         },
         {
-            "DISTRICT_CODE": "41",
-            "DISTRICT_NAME": "หลักสี่"
+            "district_code": "41",
+            "district_name": "หลักสี่",
+            "extent": {
+                "minx": 100.543629,
+                "miny": 13.849628,
+                "maxx": 100.594813,
+                "maxy": 13.914457
+            }
         },
         {
-            "DISTRICT_CODE": "17",
-            "DISTRICT_NAME": "ห้วยขวาง"
+            "district_code": "17",
+            "district_name": "ห้วยขวาง",
+            "extent": {
+                "minx": 100.563297,
+                "miny": 13.741142,
+                "maxx": 100.604095,
+                "maxy": 13.803112
+            }
         }
     ],
     "RESULT_STATUS": "000",
@@ -432,28 +725,24 @@
 {
     "RESULT_DATA": [
         {
-            "SUBDISTRICT_CODE": "06",
-            "SUBDISTRICT_NAME": "ขุมทอง"
+            "subdistrict_code": "01",
+            "subdistrict_name": "มีนบุรี",
+            "extent": {
+                "minx": 100.696776,
+                "miny": 13.773224,
+                "maxx": 100.749246,
+                "maxy": 13.838456
+            }
         },
         {
-            "SUBDISTRICT_CODE": "02",
-            "SUBDISTRICT_NAME": "คลองสองต้นนุ่น"
-        },
-        {
-            "SUBDISTRICT_CODE": "03",
-            "SUBDISTRICT_NAME": "คลองสามประเวศ"
-        },
-        {
-            "SUBDISTRICT_CODE": "05",
-            "SUBDISTRICT_NAME": "ทับยาว"
-        },
-        {
-            "SUBDISTRICT_CODE": "01",
-            "SUBDISTRICT_NAME": "ลาดกระบัง"
-        },
-        {
-            "SUBDISTRICT_CODE": "04",
-            "SUBDISTRICT_NAME": "ลำปลาทิว"
+            "subdistrict_code": "02",
+            "subdistrict_name": "แสนแสบ",
+            "extent": {
+                "minx": 100.735632,
+                "miny": 13.775433,
+                "maxx": 100.80801,
+                "maxy": 13.84929
+            }
         }
     ],
     "RESULT_STATUS": "000",
