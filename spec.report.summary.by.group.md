@@ -23,7 +23,7 @@
 {
     "RESULT_DATA": [
         {
-            "details": {
+            "summary": {
                 "working_duration": "104:35:48",
                 "total_distance": "1323 กม.",
                 "stop_machine_on_duration": "59:47:08",
@@ -32,7 +32,7 @@
                 "speed_over_times": 47141,
                 "machine_on_times": 45
             },
-            "summary": [
+            "details": [
                 {
                     "imei": "861311007894107",
                     "device_id": 18698,
