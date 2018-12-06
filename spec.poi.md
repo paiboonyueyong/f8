@@ -156,17 +156,17 @@
 ```
 
 
-# getPOIList
+# setPOIVisible
 
 ## url
-    http://{server}//getPOIList/{pageNo}/{pageSize}
+    http://{server}/setPOIVisible/{id}
 
-## request body (body empty = getAll)
+## request body
 
 ```json
 
 {    
-	"filter":"Sw"
+	"isVisible":true
 }
 
 ```
@@ -175,40 +175,9 @@
 
 ```json
 {
-    "RESULT_DATA": [
-        {
-            "_id": "5b9e76c49a33c715f0cdad40",
-            "name": "Sweet Dug2",
-            "group": "B-quick ddd",
-            "radius": 50,
-            "location": {
-                "latitude": 14.988135,
-                "longitude": 102.096535
-            },
-            "icon": {
-                "name": "bicycle",
-                "color": "indigo",
-                "is_small": false
-            },
-            "alert": {
-                "email": "paiboon.yue@gmail.com",
-                "line_token": "349ab29a-xtab-423b-a5hc-5623bc39b8c8",
-                "when": {
-                    "is_entry": true,
-                    "is_leave": false
-                }
-            },
-            "poi_id": 2,
-            "user_id": 2,
-            "create_user": "kelly (2)",
-            "create_dtm": "2018-09-16T15:29:07.999Z",
-            "last_upd_dtm": "2018-09-16T15:50:27.478Z",
-            "last_upd_user": "kelly (2)"
-        }
-    ],
+    "RESULT_DATA": [],
     "RESULT_STATUS": "000",
-    "RESULT_MESSAGE": "Successfull",
-    "RESULT_TOTAL": 1
+    "RESULT_MESSAGE": "Successfull"
 }
 
 ```
