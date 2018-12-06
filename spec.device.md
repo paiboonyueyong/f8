@@ -669,3 +669,31 @@
     "RESULT_MESSAGE": "Successfull"
 }
 ```
+
+## url
+    http://{server}/getDeviceGroupList
+
+## request body
+{
+    "filter":
+}
+
+## response (if success)
+```json
+{
+    "RESULT_DATA": [
+        {
+            "name": "wutthinan"
+        },
+        {
+            "name": "Group_Name_AAA"
+        },
+        {
+            "name": ""
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull",
+    "RESULT_TOTAL": 3
+}
+```
