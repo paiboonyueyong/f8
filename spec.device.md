@@ -452,7 +452,7 @@
 }
 ```
 
-#getDeviceNoActive
+#getActiveDeviceUserRelated
 
 ## url
     http://{server}/getActiveDeviceUserRelated/{size}
@@ -695,5 +695,26 @@
     "RESULT_STATUS": "000",
     "RESULT_MESSAGE": "Successfull",
     "RESULT_TOTAL": 3
+}
+```
+
+# setChangeDetail
+
+## url
+    http://{server}/setDeviceChangeDetail/{device_id} 
+
+## request body
+ ```json
+{
+	"special_setting.change_detail" : "หยุดใช้งาน"
+}
+```
+
+## response (if success)
+```json
+{
+    "RESULT_DATA": [],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
 }
 ```
