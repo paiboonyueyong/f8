@@ -5,8 +5,8 @@
 # getReportSummaryByDevice
 
 ## url
-    http://{server}/api/report/getReportSummaryByDevice
-    
+    http://{server}/api/report/getReportSummaryByDevice/pageNo/pageSize
+
 ## request body (หากต้องการดึงข้อมูลรถทุกคันให้ส่ง devices:[])
 ```json
 {
@@ -40,7 +40,6 @@
     ],
     "start_date" : "12-12-2018 02:00",
     "end_date": "13-12-2018 17:50"
-}
 }
 ```
 

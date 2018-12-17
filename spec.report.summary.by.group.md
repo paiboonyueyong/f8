@@ -14,7 +14,8 @@
     "start_date" : "11-11-2018",
     "end_date": "23-11-2018",
     "is_speed_over": false,
-    "speed_over_interval": 0
+    "speed_over_interval": 0,
+    "stop_interval": 10
 }
 ```
 
@@ -41,7 +42,7 @@
                     "working_duration": "11:55:21",
                     "machine_on_times": 1,
                     "speed_over_times": 0,
-                    "stop_machine_on_over_10_mins_times": 17,
+                    "stop_machine_on_over_x_mins_times": 17,
                     "stop_machine_on_max_duration": "8:29:44",
                     "fuel_use": 0
                 },
@@ -68,7 +69,7 @@
                     "stop_machine_on_duration": "29:25:36",
                     "total_distance": "297.5 กม.",
                     "speed_over_times": 17711,
-                    "stop_machine_on_over_10_mins_times": 1,
+                    "stop_machine_on_over_x_mins_times": 1,
                     "stop_machine_on_max_duration": "27:54:36",
                     "fuel_use": 0
                 },
@@ -90,7 +91,7 @@
                     "working_duration": "118:15:46",
                     "machine_on_times": 1,
                     "speed_over_times": 29430,
-                    "stop_machine_on_over_10_mins_times": 30,
+                    "stop_machine_on_over_x_mins_times": 30,
                     "stop_machine_on_max_duration": "74:40:59",
                     "fuel_use": 0
                 }
@@ -99,7 +100,7 @@
                 "working_duration": "165:22:22",
                 "total_distance": "1323 กม.",
                 "stop_machine_on_duration": "112:36:19",
-                "stop_machine_on_over_10_mins_times": 48,
+                "stop_machine_on_over_x_mins_times": 48,
                 "stop_machine_on_max_duration": "111:05:19",
                 "speed_over_times": 47141,
                 "machine_on_times": 45
