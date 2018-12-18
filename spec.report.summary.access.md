@@ -5,8 +5,10 @@
 # getAccessSummary
 
 ## url
-    http://{server}/api/report/getAccessSummary/days
+    http://{server}/api/report/getAccessSummary/type/period
 
+type : (y=year, d=day)
+    
 ## request body
 
 ## response (if success)
@@ -14,63 +16,24 @@
 {
     "RESULT_DATA": [
         {
-            "count": 1,
-            "access_date": "7 ธ.ค. 2561",
-            "access_dtm": "2018-12-06T17:00:00.000Z"
+            "count": 66,
+            "access_dtm": "09-2018"
         },
         {
-            "count": 3,
-            "access_date": "8 ธ.ค. 2561",
-            "access_dtm": "2018-12-07T17:00:00.000Z"
+            "count": 733,
+            "access_dtm": "10-2018"
         },
         {
-            "count": 10,
-            "access_date": "9 ธ.ค. 2561",
-            "access_dtm": "2018-12-08T17:00:00.000Z"
+            "count": 515,
+            "access_dtm": "11-2018"
         },
         {
-            "count": 27,
-            "access_date": "10 ธ.ค. 2561",
-            "access_dtm": "2018-12-09T17:00:00.000Z"
-        },
-        {
-            "count": 20,
-            "access_date": "11 ธ.ค. 2561",
-            "access_dtm": "2018-12-10T17:00:00.000Z"
-        },
-        {
-            "count": 15,
-            "access_date": "12 ธ.ค. 2561",
-            "access_dtm": "2018-12-11T17:00:00.000Z"
-        },
-        {
-            "count": 8,
-            "access_date": "13 ธ.ค. 2561",
-            "access_dtm": "2018-12-12T17:00:00.000Z"
-        },
-        {
-            "count": 3,
-            "access_date": "14 ธ.ค. 2561",
-            "access_dtm": "2018-12-13T17:00:00.000Z"
-        },
-        {
-            "count": 8,
-            "access_date": "15 ธ.ค. 2561",
-            "access_dtm": "2018-12-14T17:00:00.000Z"
-        },
-        {
-            "count": 9,
-            "access_date": "16 ธ.ค. 2561",
-            "access_dtm": "2018-12-15T17:00:00.000Z"
-        },
-        {
-            "count": 24,
-            "access_date": "17 ธ.ค. 2561",
-            "access_dtm": "2018-12-16T17:00:00.000Z"
+            "count": 343,
+            "access_dtm": "12-2018"
         }
     ],
     "RESULT_STATUS": "000",
     "RESULT_MESSAGE": "Successfull",
-    "RESULT_TOTAL": 11
+    "RESULT_TOTAL": 4
 }
 ```
