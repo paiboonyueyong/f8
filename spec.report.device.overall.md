@@ -12,6 +12,8 @@ type : (
     PAYMENT - รายละเอียดรถครบกำหนดชำระ
     ONLINE - รายละเอียดรถที่ส่งสัญญานปัจจุบัน
     OFFLINE - รายละเอียดรถไม่ส่งสัญญานเกิน 7 วัน
+    LICENSE - รายละเอียดรถป้ายแดง
+    ALL - รายละเอียดรถทุกคัน
 )
     
 ## request body
@@ -22,10 +24,12 @@ type : (
     "RESULT_DATA": [
         {
             "summary": {
+                "total": 8,
                 "offline": 1,
-                "online": 1,
+                "online": 7,
                 "online_dlt": 0,
-                "due_payment": 1
+                "due_payment": 1,
+                "update_license": 7
             },
             "details": [
                 {
@@ -37,14 +41,60 @@ type : (
                     "dealer": "simple corporation",
                     "sub_dealer": "fasttest",
                     "customer": "Wutthin",
-                    "last_status": "เสา",
-                    "last_track": "18 ธ.ค. 2561 14:08"
+                    "moving": "3:31:17",
+                    "stop_machine_on": "17:33:08",
+                    "machine_off": "00:00",
+                    "speed_over": "00:00"
+                },
+                {
+                    "device_no": "1กย-1287",
+                    "device_id": 18662,
+                    "install_date": "29 ส.ค. 2561",
+                    "expire_date": "30 ส.ค. 2562",
+                    "is_send_dlt": false,
+                    "dealer": "",
+                    "sub_dealer": "",
+                    "customer": "Wutthin",
+                    "moving": "00:00",
+                    "stop_machine_on": "9:57:45",
+                    "machine_off": "11:10:04",
+                    "speed_over": "00:00"
+                },
+                {
+                    "device_no": "T333/30s",
+                    "device_id": 18681,
+                    "install_date": "2 ธ.ค. 2561",
+                    "expire_date": "30 ก.ย. 2561",
+                    "is_send_dlt": false,
+                    "dealer": "",
+                    "sub_dealer": "",
+                    "customer": "chinchin",
+                    "moving": "00:00",
+                    "stop_machine_on": "00:00",
+                    "machine_off": "00:00",
+                    "speed_over": "00:00",
+                    "machine_on": "00:00"
+                },
+                {
+                    "device_no": "18703",
+                    "device_id": 18703,
+                    "install_date": "",
+                    "expire_date": "",
+                    "is_send_dlt": false,
+                    "dealer": "ชิณภัทร",
+                    "sub_dealer": "",
+                    "customer": "chinchin",
+                    "moving": "00:00",
+                    "stop_machine_on": "00:00",
+                    "machine_off": "00:00",
+                    "speed_over": "00:00",
+                    "machine_on": "00:00"
                 }
             ]
         }
     ],
     "RESULT_STATUS": "000",
     "RESULT_MESSAGE": "Successfull",
-    "RESULT_TOTAL": 1
+    "RESULT_TOTAL": 7
 }
 ```

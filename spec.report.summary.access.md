@@ -5,9 +5,10 @@
 # getAccessSummary
 
 ## url
-    http://{server}/api/report/getAccessSummary/type/period
+    http://{server}/api/report/getAccessSummary/type/duration
 
-type : (y=year, d=day)
+type : (m=month, d=day)
+duration : number of month or number of day
     
 ## request body
 
