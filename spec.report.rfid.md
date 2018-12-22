@@ -1,13 +1,14 @@
-# Get Report Distance (รายงานระยะทางการวิ่ง)
+# Get Report Distance (รายงานการรูดบัตร)
 
 ## Request Header (alway pass : token)
 
-# getReportDistance
+# getReportRFID
 
 ## url
-    http://{server}/api/report/getReportDistance/pageNo/pageSize
+    http://{server}/api/report/getReportRFID/pageNo/pageSize
 
 elapse_time_over มีหน่วยเป็นนาที เป็น option ในการกรองข้อมูลให้เลือกช่วงเวลากี่นาทีขึ้นไป
+is_not_scan true คือกรองเฉพาะข้อมูลที่ไม่มีการรูดบัตร
 
 ## request body (หากต้องการดึงข้อมูลรถทุกคันให้ส่ง devices:[])
 ```json
@@ -40,7 +41,8 @@ elapse_time_over มีหน่วยเป็นนาที เป็น opti
     ],
     "start_date" : "12-12-2018 02:00",
     "end_date": "13-12-2018 17:50",
-    "elapse_time_over": 4
+    "elapse_time_over": 4,
+    "is_not_scan": true
 }
 ```
 
@@ -66,7 +68,10 @@ elapse_time_over มีหน่วยเป็นนาที เป็น opti
                     "date": "17 ธ.ค. 2561",
                     "start_time": "23:07:47",
                     "end_time": "23:25:13",
-                    "elapse": "17:26"
+                    "elapse": "17:26",
+                    "is_driver_by_rfid":true, // true คือ รูดบัตร, false คือ ไ่ม่รูดบัตร
+                    "driver_no":"141000015500100", // รหัสบัตรขับขี่
+                    "driver_name": "MR.SONGKRAN YENSABAICHAI" // ชื่อคนขับ
                 },
                 {
                     "device_id": 18681,
@@ -84,7 +89,10 @@ elapse_time_over มีหน่วยเป็นนาที เป็น opti
                     "date": "18 ธ.ค. 2561",
                     "start_time": "09:59:34",
                     "end_time": "10:20:29",
-                    "elapse": "20:55"
+                    "elapse": "20:55",
+                    "is_driver_by_rfid":true, // true คือ รูดบัตร, false คือ ไ่ม่รูดบัตร
+                    "driver_no":"141000015500100", // รหัสบัตรขับขี่
+                    "driver_name": "MR.SONGKRAN YENSABAICHAI" // ชื่อคนขับ
                 }
             ],
             "summary": {

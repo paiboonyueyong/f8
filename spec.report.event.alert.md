@@ -1,11 +1,14 @@
 # Get Report (รายงานการแจ้งเตือน)
 
 ## Request Header (alway pass : token)
-Remark dropdown ประเภทการแจ้งเตือน ใช้
-    http://{server}/api/admin/getAlertTypeList 
-    Body : {
-        "alert_method":"GUI"
-    }
+Remark 
+    1. dropdown ประเภทการแจ้งเตือน ใช้
+        http://{server}/api/admin/getAlertTypeList 
+        Body : {
+            "alert_method":"GUI"
+        }
+    2. dropdown ทะเบียนใช้ 
+        http://{server}/api/admin/getDeviceAdnGroupList
 
 # getReportEventAlert
 
@@ -17,32 +20,113 @@ Remark dropdown ประเภทการแจ้งเตือน ใช้
 {
 	"devices":[
         {
-            "device_id": 18662
+            "name": "[wutthinan]",
+            "group_id":"wutthinan",
+            "type": "GROUP"
         },
         {
-            "device_id": 18679
-        },
-	    {
-            "device_id": 18681
-        },
-        {
-            "device_id": 18685
+            "name": "[Group_Name_AAA]",
+            "group_id":"Group_Name_AAA",
+            "type": "GROUP"
         },
         {
-            "device_id": 18687
+            "name": "[Group 1]",
+			"group_id":"Group 1",            
+            "type": "GROUP"
         },
-	    {
-            "device_id": 18688
+        {
+            "name": "18703",
+            "device_id": 18703,
+            "type": "DEVICE"
         },
-	    {
-            "device_id": 18692
+        {
+            "name": "18704",
+            "device_id": 18704,
+            "type": "DEVICE"
         },
-	    {
-            "device_id": 18698
+        {
+            "name": "18705",
+            "device_id": 18705,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18706",
+            "device_id": 18706,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18707",
+            "device_id": 18707,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18708",
+            "device_id": 18708,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18709",
+            "device_id": 18709,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18710",
+            "device_id": 18710,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18711",
+            "device_id": 18711,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18712",
+            "device_id": 18712,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18713",
+            "device_id": 18713,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18714",
+            "device_id": 18714,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18715",
+            "device_id": 18715,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18716",
+            "device_id": 18716,
+            "type": "DEVICE"
+        },
+        {
+            "name": "1กท-1287",
+            "device_id": 18692,
+            "type": "DEVICE"
+        },
+        {
+            "name": "1กย-1287",
+            "device_id": 18662,
+            "type": "DEVICE"
+        },
+        {
+            "name": "ID5",
+            "device_id": 18679,
+            "type": "DEVICE"
+        },
+        {
+            "name": "T333/30s",
+            "device_id": 18681,
+            "type": "DEVICE"
         }
     ],
-    "start_date" : "12-12-2018 02:00",
-    "end_date": "13-12-2018 17:50"
+    "start_date": "11-11-2018 23:00",
+	"end_date": "20-12-2018 23:00"
 }
 ```
 

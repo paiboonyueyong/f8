@@ -216,7 +216,8 @@
 ## request body
 {
     "filter" : "",
-    "isGroupOrder" : true
+    "isGroupOrder" : true, 
+    "isAlert": true // undefined หรือ เป็น True ดึงเฉพาะ ข้อมูลที่มีการ alert ถ้าเป็น false ดึงทั้งหมด
 }
 
 ## response (if success)

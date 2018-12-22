@@ -9,7 +9,7 @@
 # newDevice
 
 ## url
-    http://{server}/newDevice
+    http://{server}/api/admin/newDevice
 
 ## request body
 ```json
@@ -34,7 +34,7 @@
 # deleteDevice
 
 ## url
-    http://{server}/deleteDevice/{device_id} 
+    http://{server}/api/admin/deleteDevice/{device_id} 
 
 ## request body
 
@@ -51,7 +51,7 @@
 # updateDervice
 
 ## url
-    http://{server}/updateDevice/{device_id} 
+    http://{server}/api/admin/updateDevice/{device_id} 
 
 ## request body
 ```json
@@ -88,7 +88,7 @@
 # setDevicePortInOut
 
 ## url
-    http://{server}/updateDevice/{device_id} 
+    http://{server}/api/admin/updateDevice/{device_id} 
 
 ## request body
 ```json
@@ -128,7 +128,7 @@
 # setDevicePortAnalog
 
 ## url
-    http://{server}/updateDevice/{device_id} 
+    http://{server}/api/admin/updateDevice/{device_id} 
 
 ## request body
 ```json
@@ -161,7 +161,7 @@
 # setDeviceSpacial
 
 ## url
-    http://{server}/updateDevice/{device_id} 
+    http://{server}/api/admin/updateDevice/{device_id} 
 
 ## request body
 ```json
@@ -204,7 +204,7 @@
 # setDeviceAlert
 
 ## url
-    http://{server}/updateDevice/{device_id} 
+    http://{server}/api/admin/updateDevice/{device_id} 
 
 ## request body
  ```json
@@ -250,7 +250,7 @@
 # getDeviceInfo
 
 ## url
-    http://{server}/getDeviceInfo/{device_id} 
+    http://{server}/api/admin/getDeviceInfo/{device_id} 
 
 ## request body
 
@@ -395,7 +395,7 @@
 # getDeviceList
 
 ## url
-    http://{server}/getDeviceList/{pageNumber}/{pageSize} 
+    http://{server}/api/admin/getDeviceList/{pageNumber}/{pageSize} 
 
 ## request body
 ```json
@@ -455,7 +455,7 @@
 #getActiveDeviceUserRelated
 
 ## url
-    http://{server}/getActiveDeviceUserRelated/{size}
+    http://{server}/api/admin/getActiveDeviceUserRelated/{size}
 
     0 : getAll
     others : limit size
@@ -491,7 +491,7 @@
 # getDeviceUserRelated
 
 ## url
-    http://{server}/getDeviceUserRelated/{user_id}/{pageNo}/{pageSize}
+    http://{server}/api/admin/getDeviceUserRelated/{user_id}/{pageNo}/{pageSize}
 
 ## request body
 ```json
@@ -536,7 +536,7 @@
 # getDeviceNoUserRelated
 
 ## url
-    http://{server}/getDeviceNoUserRelated/{user_id}
+    http://{server}/api/admin/getDeviceNoUserRelated/{user_id}
 
 ## request body
 ```json
@@ -605,7 +605,7 @@
 # addDeviceAlert
 
 ## url
-    http://{server}/addDeviceAlert/{device_id}
+    http://{server}/api/admin/addDeviceAlert/{device_id}
 
 ## request body
 ```json
@@ -632,7 +632,7 @@
 # updateDeviceAlert
 
 ## url
-    http://{server}/updateDeviceAlert/{device_id}/{alert_id}
+    http://{server}/api/admin/updateDeviceAlert/{device_id}/{alert_id}
 
 ## request body
 ```json
@@ -657,7 +657,7 @@
 ```
 
 ## url
-    http://{server}/deleteDeviceAlert/{device_id}/{alert_id}
+    http://{server}/api/admin/deleteDeviceAlert/{device_id}/{alert_id}
 
 ## request body
 
@@ -671,7 +671,7 @@
 ```
 
 ## url
-    http://{server}/getDeviceGroupList
+    http://{server}/api/admin/getDeviceGroupList
 
 ## request body
 {
@@ -701,7 +701,7 @@
 # setChangeDetail
 
 ## url
-    http://{server}/setDeviceChangeDetail/{device_id} 
+    http://{server}/api/admin/setDeviceChangeDetail/{device_id} 
 
 ## request body
  ```json
@@ -716,5 +716,125 @@
     "RESULT_DATA": [],
     "RESULT_STATUS": "000",
     "RESULT_MESSAGE": "Successfull"
+}
+```
+# getDeviceAdnGroupList
+
+## url
+    http://{server}/api/admin/getDeviceAdnGroupList
+
+## request body
+
+
+## response (if success)
+```json
+{
+    "RESULT_DATA": [
+        {
+            "name": "[wutthinan]",
+            "type": "GROUP"
+        },
+        {
+            "name": "[Group_Name_AAA]",
+            "type": "GROUP"
+        },
+        {
+            "name": "[Group 1]",
+            "type": "GROUP"
+        },
+        {
+            "name": "18703",
+            "device_id": 18703,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18704",
+            "device_id": 18704,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18705",
+            "device_id": 18705,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18706",
+            "device_id": 18706,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18707",
+            "device_id": 18707,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18708",
+            "device_id": 18708,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18709",
+            "device_id": 18709,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18710",
+            "device_id": 18710,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18711",
+            "device_id": 18711,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18712",
+            "device_id": 18712,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18713",
+            "device_id": 18713,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18714",
+            "device_id": 18714,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18715",
+            "device_id": 18715,
+            "type": "DEVICE"
+        },
+        {
+            "name": "18716",
+            "device_id": 18716,
+            "type": "DEVICE"
+        },
+        {
+            "name": "1กท-1287",
+            "device_id": 18692,
+            "type": "DEVICE"
+        },
+        {
+            "name": "1กย-1287",
+            "device_id": 18662,
+            "type": "DEVICE"
+        },
+        {
+            "name": "ID5",
+            "device_id": 18679,
+            "type": "DEVICE"
+        },
+        {
+            "name": "T333/30s",
+            "device_id": 18681,
+            "type": "DEVICE"
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull",
+    "RESULT_TOTAL": 21
 }
 ```
