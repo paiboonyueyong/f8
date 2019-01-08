@@ -72,7 +72,8 @@
     "symbol_id": "car.jpeg", // "ตั้งค่า Marker สัญลักษณ์"
     "symbol_color": "Red", // "ตั้งค่า Marker สี"
     "petroleum_from_date": "11-10-2018", // "ตั้งค่าน้ำมัน เริ่มจากวันที่"
-    "petroleum_to_date": "01-11-2018" // "ตั้งค่าน้ำมัน ถึงวันที่"  
+    "petroleum_to_date": "01-11-2018", // "ตั้งค่าน้ำมัน ถึงวันที่"
+    "install_with_rfid": true // ติดตั้งพร้อมเครื่องรูดบัตร !!! New (2019-01-08)
 }
 ```
 ## response (if success)
