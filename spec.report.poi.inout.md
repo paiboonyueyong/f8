@@ -13,8 +13,16 @@
 {
 	"deviceId":18662,
 	"poiId":6,
-    "startDtm":"2019/01/08 22:40", // DDDD/MM/YY HH:MM
-    "endDtm":"2019/01/08 23:20", // DDDD/MM/YY HH:MM
+    "startDtm":"2019/01/08 22:40", 
+    "endDtm":"2019/01/08 23:20", 
+    "timeStopMinute": 1 
+}
+
+{
+    "deviceId":18662,
+    "poiId":6,
+    "startDtm":"08/01/2019 22:40", // DD/MM/YYYY HH:MM
+    "endDtm":"08/01/2019 23:20", // DD/MM/YYYY HH:MM
     "timeStopMinute": 1 // duration of car stop (unit is minute)
 }
 
