@@ -10,13 +10,6 @@
 
 ## request body
 ```json
-{
-	"deviceId":18662,
-	"poiId":6,
-    "startDtm":"2019/01/08 22:40", 
-    "endDtm":"2019/01/08 23:20", 
-    "timeStopMinute": 1 
-}
 
 {
     "deviceId":18662,
