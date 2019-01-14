@@ -14,11 +14,10 @@
 ## request body
 ```json
 {
-  "serial": "0101010",
   "imei": "International Mobile Equipment Identity",
   "sim_no": "",
   "model": "รุ่น Tracker",
-  "vendor": "ยี่ห้อ Tracker"
+  "network_operator": "AIS" // AIS/DTACK/TRUE
 }
 ```
 ## response (if success)
@@ -73,7 +72,12 @@
     "symbol_color": "Red", // "ตั้งค่า Marker สี"
     "petroleum_from_date": "11-10-2018", // "ตั้งค่าน้ำมัน เริ่มจากวันที่"
     "petroleum_to_date": "01-11-2018", // "ตั้งค่าน้ำมัน ถึงวันที่"
-    "install_with_rfid": true // ติดตั้งพร้อมเครื่องรูดบัตร !!! New (2019-01-08)
+    "install_with_rfid": true, // ติดตั้งพร้อมเครื่องรูดบัตร !!! New (2019-01-08)
+    "imei": "International Mobile Equipment Identity", // !!! New (2019-01-14)
+    "sim_no": "", // !!! New (2019-01-14)
+    "model": "รุ่น Tracker", // !!! New (2019-01-14)
+    "network_operator": "" // AIS/DTAC/TRUE
+    
 }
 ```
 ## response (if success)
@@ -837,5 +841,69 @@
     "RESULT_STATUS": "000",
     "RESULT_MESSAGE": "Successfull",
     "RESULT_TOTAL": 21
+}
+```
+
+# getDeviceExtendExpireHistory
+
+## url
+    http://{server}/api/admin/getDeviceExtendExpireHistory/{pageNo}/{pageSize}
+
+## request body
+```json
+{
+	"filter": "",
+	"is_all": true // ดูทั้งหมด
+}
+```
+
+## response (if success)
+```json
+{
+    "RESULT_DATA": [
+        {
+            "device_id": 18698,
+            "device_no": "ID5test",
+            "user_id": 1,
+            "user_name": "Admin2",
+            "extend_dtm": "9 ม.ค. 2562",
+            "expire_date": "5 มี.ค. 2562",
+            "new_expire_date": "31 มี.ค. 2562",
+            "verified": true,
+            "verified_dtm": "9 ม.ค. 2562",
+            "verified_user": "Admin2"
+        },
+        {
+            "device_id": 18679,
+            "device_no": "ID5",
+            "user_id": 1,
+            "user_name": "Admin2",
+            "extend_dtm": "9 ม.ค. 2562",
+            "expire_date": "3 พ.ค. 2562",
+            "new_expire_date": "29 พ.ค. 2562",
+            "verified": false,
+            "verified_dtm": "",
+            "verified_user": ""
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull",
+    "RESULT_TOTAL": 2
+}
+```
+
+# setDeviceExtendExpireVerifed
+
+## url
+    http://{server}/api/admin/setDeviceExtendExpireVerifed/{device_id}
+
+## request body
+
+## response (if success)
+```json
+{
+    "RESULT_DATA": [],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
 }
 ```
