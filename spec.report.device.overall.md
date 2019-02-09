@@ -104,3 +104,35 @@ type : (
     "RESULT_TOTAL": 7
 }
 ```
+
+# Tracking Status Summary
+
+## url
+    http://{server}/api/report/getTrackingStatusSummary
+
+* หมายเหตุ
+    speed_over = เร็ว
+    moving = วิ่ง
+    stop = จอด
+    parking = ดับ
+    gsm = เสา
+
+## request body
+
+## response (if success)
+```json
+{
+    "RESULT_DATA": [
+        {
+            "speed_over": 0,
+            "moving": 0,
+            "stop": 1,
+            "parking": 38,
+            "gsm": 0
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull",
+    "RESULT_TOTAL": 1
+}
+``` 

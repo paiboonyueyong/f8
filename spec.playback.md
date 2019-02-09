@@ -23,72 +23,66 @@
 
 ```json
 {
-    "RESULT_DATA": [
-        {
-            "imei": "868998031020627",
-            "device_id": 18662,
-            "device_group": "CubE",
-            "device_model": "VIGO",
-            "device_no": "1กท-1287",
-            "expire_date": "30-08-2019",
-            "install_date": "29-08-2018",
-            "is_dlt_alert": false,
-            "remarks": "เร่งเต็มพิกัด อัดสุดไมล์",
-            "speed_limit": "",
-            "symbol_color": "#27AE60",
-            "symbol_id": "taxi",
-            "driver_id": 4,
-            "car_type": "รถจักรยานยนต์ (รย.12)",
-            "car_province": "ตาก",
-            "car_brand": "BAT",
-            "total_speed_over": 28,
-            "total_distance": "2.4",
-            "total_stop_minute": 2444,
-            "total_running_minute": 19,
-            "total_machine_off_minute": 16,
-            "average_speed": 5,
-            "tracker": [
-                {
-                    "speed": 0,
-                    "lat": 12.922908,
-                    "lng": 100.911326,
-                    "heading": "SE",
-                    "gps": 10,
-                    "date": "09-11-2018",
-                    "time": "10:45",
-                    "status": "ดับ",
-                    "gsm": 22,
-                    "place": "ต.หนองปรือ อ.บางละมุง จ.ชลบุรี",
-                    "driver_name": "testTide",
-                    "driver_contact": "-",
-                    "driver_by_tracker": false,
-                    "speed_over": false,
-                    "distance": "0.0",
-                    "direction": 1
-                },
-                {
-                    "speed": 0,
-                    "lat": 12.922906,
-                    "lng": 100.911325,
-                    "heading": "NE",
-                    "gps": 10,
-                    "date": "09-11-2018",
-                    "time": "10:46",
-                    "status": "ดับ",
-                    "gsm": 21,
-                    "place": "ต.หนองปรือ อ.บางละมุง จ.ชลบุรี",
-                    "driver_name": "testTide",
-                    "driver_contact": "-",
-                    "driver_by_tracker": false,
-                    "speed_over": false,
-                    "distance": "0.0",
-                    "direction": 1
-                }
-	]
-        }
-    ],
-    "RESULT_STATUS": "000",
-    "RESULT_MESSAGE": "Successfull",
-    "RESULT_TOTAL": 2500
+   "RESULT_DATA":[
+      {
+         "imei":"868998035990486",
+         "device_id":18773,
+         "device_no":"วีโก้",
+         "driver_id":"",
+         "symbol_color":"",
+         "symbol_id":"",
+         "total_speed_over":0,
+         "total_distance":"23.0",
+         "total_stop_minute":21,
+         "total_running_minute":52,
+         "total_machine_off_minute":165,
+         "average_speed":29,
+         "tracker":[
+            {
+               "speed":0,
+               "lat":12.914476,
+               "lng":100.913126,
+               "heading":"SW",
+               "gps":5,
+               "date":"09-02-2019",
+               "time":"18:02:40",
+               "status":"จอด",
+               "gsm":15,
+               "direction":204,
+               "fuel":100,
+               "place":"ต.หนองปรือ อ.บางละมุง จ.ชลบุรี",
+               "driver_by_tracker":false,
+               "driver_name":"",
+               "driver_no":"",
+               "driver_contact":"",
+               "speed_over":false,
+               "distance":"0.0"
+            },
+            {
+               "speed":1,
+               "lat":12.914495,
+               "lng":100.913203,
+               "heading":"E",
+               "gps":5,
+               "date":"09-02-2019",
+               "time":"18:03:21",
+               "status":"ดับ",
+               "gsm":15,
+               "direction":80,
+               "fuel":100,
+               "place":"ต.หนองปรือ อ.บางละมุง จ.ชลบุรี",
+               "driver_by_tracker":false,
+               "driver_name":"",
+               "driver_no":"",
+               "driver_contact":"",
+               "speed_over":false,
+               "distance":"0.0"
+            }
+         ]
+      }
+   ],
+   "RESULT_STATUS":"000",
+   "RESULT_MESSAGE":"Successfull",
+   "RESULT_TOTAL":323
 }
 ```

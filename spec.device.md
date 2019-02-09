@@ -178,8 +178,6 @@
       "is_send_sccc": false,  
       "is_send_post_office": false,  
       "dlt_group": 1,  
-      "file_name": "", 
-      "file_attach": "Y29uc3QgX21vbmdvZGIgPSByZXF1aXJlKCdtb25nb2RiJyk7DQpjb25zdCBtb25nb2RiID0gcmVxdWlyZSgnLi9EQUwvbW9uZ29kYicpOw0KY29uc3QgbG9nZ2VyID0gcmVxdWlyZ==",  
       "change_detail": "รายการใหม่",  
       "inform_date": "03-10-2018",  
       "car_type_id": 9,  
@@ -334,8 +332,6 @@
                 "is_send_sccc": false,
                 "is_send_post_office": false,
                 "dlt_group": 1,
-                "file_name": "",
-                "file_attach": "Y29uc3QgX21vbmdvZGIgPSByZXF1aXJlKCdtb25nb2RiJyk7DQpjb25zdCBtb25nb2RiID0gcmVxdWlyZSgnLi9EQUwvbW9uZ29kYicpOw0KY29uc3QgbG9nZ2VyID0gcmVxdWlyZ==",
                 "change_detail": "รายการใหม่",
                 "inform_date": "03-10-2018",
                 "car_type_id": 9,
@@ -348,7 +344,19 @@
                 "db_card_no": "ไม่มี",
                 "fix_place": "อู่ซ่อม",
                 "fix_place_start_date": "20-10-2018",
-                "fix_place_finish_date": "30-10-2018"
+                "fix_place_finish_date": "30-10-2018",
+                "attachs": [
+                    {
+                        "name": "nan.jpg",
+                        "img": "/viewDeviceAttach/18681/document/nan.jpg"
+                    }
+                ],
+                "offline_attachs" : [
+                    {
+                        "name": "nan.jpg",
+                        "img": "/viewDeviceAttach/18681/document/nan.jpg"
+                    }
+                ]
             },
             "alert":  [
                 {
@@ -726,7 +734,7 @@
 # getDeviceAdnGroupList
 
 ## url
-    http://{server}/api/admin/getDeviceAdnGroupList
+    http://{server}/api/admin/getDeviceAndGroupList
 
 ## request body
 
@@ -900,6 +908,90 @@
 ## request body
 
 ## response (if success)
+```json
+{
+    "RESULT_DATA": [],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+```
+
+# addDeviceAttach
+
+## url
+    http://{server}/api/admin/addDeviceAttach/{device_id}/{type}
+
+**
+    type : {
+        offline = เอกสารหยุดเกิน 7 วัน
+        document = เอกสารทั่วไป
+    }
+
+## request body
+```json
+{
+    "name" : "picture.jpg",
+    "content" : "iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAIAAABnsVYUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAP=="
+}
+```
+
+## response (if success)
+```json
+{
+    "RESULT_DATA": [],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+```
+
+# deleteDeviceAttach
+
+## url
+    http://{server}/api/admin/deleteDeviceAttach/{device_id}/{img name}/{type}
+
+**
+    type : {
+        offline = เอกสารหยุดเกิน 7 วัน
+        document = เอกสารทั่วไป
+    }
+
+## request body
+```json
+```
+
+## response (if success)
+```json
+{
+    "RESULT_DATA": [],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+```
+
+# newManyDevice
+
+## url
+    http://{server}/api/admin/newManyDevice
+
+## request body
+```json
+[
+    {
+        "imei": "International Mobile Equipment Identity",
+        "sim_no": "",
+        "model": "รุ่น Tracker",
+        "network_operator": "AIS" // AIS/DTACK/TRUE
+    },
+    {
+        "imei": "International Mobile Equipment Identity",
+        "sim_no": "",
+        "model": "รุ่น Tracker",
+        "network_operator": "AIS" // AIS/DTACK/TRUE
+    }
+]
+```
+## response (if success)
+
 ```json
 {
     "RESULT_DATA": [],
