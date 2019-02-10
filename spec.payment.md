@@ -11,6 +11,7 @@
 ## request body
 ```json
 {
+    "customer_name": "Wutthinan Rungjaroen",
 	"amount" : 10000,
 	"transaction_dtm" : "16-02-1981 23:00",
 	"banking": "Kbank",
@@ -67,8 +68,9 @@
 {
     "RESULT_DATA": [
         {
+            "customer_name": "Wutthinan Rungjaroen",
             "amount": 10000,
-            "transaction_dtm": "16 ก.พ. 2524 23:00"
+            "transaction_dtm": "16 ก.พ. 2524 23:00",
             "banking": "Kbank",
             "originate_banking": "Kbank",
             "remark": "ทดสอบ API",
@@ -97,6 +99,7 @@
             "verified": false
         },
         {
+            "customer_name": "Wutthinan Rungjaroen",
             "amount": 10000,
             "transaction_dtm": "16 ก.พ. 2524 23:00",
             "banking": "Kbank",
@@ -161,6 +164,7 @@
 {
     "RESULT_DATA": [
         {
+            "customer_name": "Wutthinan Rungjaroen",
             "amount": 10000,
             "transaction_dtm": "16 ก.พ. 2524 23:00",
             "banking": "Kbank",
