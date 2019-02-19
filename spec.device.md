@@ -17,7 +17,8 @@
   "imei": "International Mobile Equipment Identity",
   "sim_no": "",
   "model": "รุ่น Tracker",
-  "network_operator": "AIS" // AIS/DTACK/TRUE
+  "network_operator": "AIS", // AIS/DTACK/TRUE,
+  "external_device" : true // กล่องจูน = true
 }
 ```
 ## response (if success)
@@ -76,8 +77,8 @@
     "imei": "International Mobile Equipment Identity", // !!! New (2019-01-14)
     "sim_no": "", // !!! New (2019-01-14)
     "model": "รุ่น Tracker", // !!! New (2019-01-14)
-    "network_operator": "" // AIS/DTAC/TRUE
-    
+    "network_operator": "", // AIS/DTAC/TRUE
+    "last_paid_sim_no": "01-11-2018", // "เติมเงินค่า sim ครั้งล่าสุด"
 }
 ```
 ## response (if success)
@@ -292,6 +293,7 @@
             "speed_limit": 90,
             "symbol_color": "Red",
             "symbol_id": "car.jpeg",
+            "last_paid_sim_no": "11-10-2018",
             "input_outputs": [
                 {
                     "port_type": "Input",
@@ -442,21 +444,33 @@
             "install_date": "05-10-2018",
             "is_dlt_alert": false,
             "speed_limit": 100,
-            "stock_on_user_id": 0
+            "tracking_dtm": "19 ก.พ. 2562 20:48:22"  // !! new 19/02/2019
         },
         {
-            "serial": "004514248453579315758599954957",
-            "imei": "261114383014958",
-            "sim_no": "0817013733",
-            "model": "รุ่นนี่ดี",
-            "vendor": "FastTrack",
-            "device_id": 14578,
-            "device_status": "Available",
-            "create_user": "Admin",
-            "last_upd_user": "Admin",
-            "create_dtm": "2018-10-03T16:07:04.872Z",
-            "last_upd_dtm": "2018-10-03T16:07:04.872Z",
-            "stock_on_user_id": 0
+            "imei": "861311007894107",
+            "sim_no": "0952919110",
+            "model": "id5",
+            "dealer_id": "",
+            "customer_id": "",
+            "create_user": "chin",
+            "last_upd_user": "chin",
+            "create_dtm": "2018-11-27T02:32:53.783Z",
+            "last_upd_dtm": "2019-02-19T10:54:55.249Z",
+            "device_id": 18698,
+            "device_no": "ID5test",
+            "driver_id": "",
+            "speed_limit": "140",
+            "symbol_color": "#5DADE2",
+            "symbol_id": "car-side",
+            "visible": true,
+            "install_date": "17-12-2018",
+            "expire_date": "30-03-2019",
+            "install_with_rfid": true,
+            "rfid_checked": false,
+            "network_operator": "AIS",
+            "device_group": "wutthinan",
+            "external_device": true,
+            "tracking_dtm": "19 ก.พ. 2562 20:48:22"
         }
     ],
     "RESULT_STATUS": "000",
@@ -537,7 +551,7 @@
             "install_date": "2018-10-05T00:00:00.000Z",
             "is_dlt_alert": false,
             "speed_limit": 100,
-            "stock_on_user_id": 0
+            "tracking_dtm": "19 ก.พ. 2562 20:48:22" // !! new 19-02-2019
         }
     ],
     "RESULT_STATUS": "000",
@@ -997,5 +1011,39 @@
     "RESULT_DATA": [],
     "RESULT_STATUS": "000",
     "RESULT_MESSAGE": "Successfull"
+}
+```
+
+# getDeviceAttachNames
+
+## url
+    http://{server}/api/admin/getDeviceAttachNames/{device_id}/{type}
+
+**
+    type : {
+        offline = เอกสารหยุดเกิน 7 วัน
+        document = เอกสารทั่วไป
+    }
+
+## request body
+```json
+```
+
+## response (if success)
+```json
+{
+    "RESULT_DATA": [
+        {
+            "name": "6605.jpg",
+            "img": "/viewDeviceAttach/18698/document/6605.jpg"
+        },
+        {
+            "name": "set proxy.txt",
+            "img": "/viewDeviceAttach/18698/document/set proxy.txt"
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull",
+    "RESULT_TOTAL": 2
 }
 ```
