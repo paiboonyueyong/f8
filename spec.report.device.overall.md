@@ -15,6 +15,7 @@ type : (
     LICENSE - รายละเอียดรถป้ายแดง
     ALL - รายละเอียดรถทุกคัน
     RFID - กล่องที่ติดพร้อมเครื่องรูดบัตรแต่ยังไม่มีการรูดขึ้นมาจากเครื่อง  !!! New (2019-01-08)
+    SPEED - กล่องที่มีความเร็วเกิน !!! New (2019-02-19)
 )
     
 ## request body
@@ -31,7 +32,8 @@ type : (
                 "online_dlt": 0,
                 "due_payment": 1,
                 "update_license": 7,
-                "rfid_check": 0         // !!! New (2019-01-08)
+                "rfid_check": 0,         // !!! New (2019-01-08)
+                "speed_over": 0         // !!! New (2019-02-19)
             },
             "details": [
                 {
@@ -128,7 +130,7 @@ type : (
             "moving": 0,
             "stop": 1,
             "parking": 38,
-            "gsm": 0
+            "gsm": 0,
         }
     ],
     "RESULT_STATUS": "000",

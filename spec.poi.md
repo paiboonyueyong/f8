@@ -155,7 +155,6 @@
 
 ```
 
-
 # setPOIVisible
 
 ## url
@@ -181,4 +180,74 @@
 }
 
 ```
+
+# newManyPOI
+
+## url
+    http://{server}/newManyPOI/
+
+## request body
+
+```json
+
+[
+	{
+	    "name" : "test poi 1",
+	    "group" : "test",
+	    "radius" : 50.0,
+	    "location" : {
+		"latitude" : 14.988135,
+		"longitude" : 102.096535
+	    },
+	    "icon" : {
+		"name" : "bicycle",
+		"color" : "indigo",
+		"is_small" : false
+	    },
+	    "alert" : {
+		"email" : "paiboon.yue@gmail.com",
+		"line_token" : "349ab29a-xtab-423b-a5hc-5623bc39b8c8",
+		"when" : {
+		    "is_entry" : false,
+		    "is_leave" : false
+		}
+	    }
+	},
+	{
+	    "name" : "test poi 2",
+	    "group" : "test",
+	    "radius" : 50.0,
+	    "location" : {
+		"latitude" : 14.988135,
+		"longitude" : 102.096535
+	    },
+	    "icon" : {
+		"name" : "bicycle",
+		"color" : "indigo",
+		"is_small" : false
+	    },
+	    "alert" : {
+		"email" : "paiboon.yue@gmail.com",
+		"line_token" : "349ab29a-xtab-423b-a5hc-5623bc39b8c8",
+		"when" : {
+		    "is_entry" : false,
+		    "is_leave" : false
+		}
+	    }
+	}
+]
+
+```
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": [],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+
+```
+
 
