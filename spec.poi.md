@@ -343,3 +343,70 @@
 ```
 
 
+```
+# getPOIListByGroup
+
+## url
+    http://{server}/getPOIListByGroup
+
+## request body (body empty = getAll)
+
+```json
+
+{
+	"groupName": "บ้าน Owner"
+}
+
+```
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": [
+        {
+            "_id": "5bd9f04e5959c62b14bca654",
+            "name": "พฤกษา บุญสัมพันธ์-พัทยากลาง",
+            "group": "บ้าน Owner",
+            "radius": 500,
+            "location": {
+                "latitude": 14.538833,
+                "longitude": 100.090596
+            },
+            "loc": {
+                "type": "Point",
+                "coordinates": [
+                    100.090596,
+                    14.538833
+                ]
+            },
+            "icon": {
+                "name": "home",
+                "color": "#FF5733",
+                "is_small": false
+            },
+            "alert": {
+                "email": "paiboon.yue@gmail.com",
+                "line_token": "6WE1bnOluY15kL3ZGfi9HWj2dXoPYtLUohqQy0beExH",
+                "when": {
+                    "is_entry": true,
+                    "is_leave": true
+                }
+            },
+            "poi_id": 2,
+            "user_id": 2,
+            "create_user": "kelly (2)",
+            "create_dtm": "2018-09-16T15:29:07.999Z",
+            "last_upd_dtm": "2019-01-08T16:00:10.148Z",
+            "last_upd_user": "admtest (2)",
+            "is_visible": true
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull",
+    "RESULT_TOTAL": 1
+}
+
+```
+
+
