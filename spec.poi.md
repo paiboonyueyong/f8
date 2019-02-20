@@ -251,3 +251,95 @@
 ```
 
 
+# getPOIGroupList
+
+## url
+    http://{server}/getPOIGroupList
+
+## request body (no)
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": [
+        {
+            "id": "ไม่มีกลุ่ม",
+            "desc": "ไม่มีกลุ่ม (5)"
+        },
+        {
+            "id": "B-quick ddd",
+            "desc": "B-quick ddd (2)"
+        },
+        {
+            "id": "ฟาย",
+            "desc": "ฟาย (1)"
+        },
+        {
+            "id": "poi มาแล้ว",
+            "desc": "poi มาแล้ว (1)"
+        },
+        {
+            "id": "poi test",
+            "desc": "poi test (1)"
+        },
+        {
+            "id": "xpoi",
+            "desc": "xpoi (1)"
+        },
+        {
+            "id": "zzz",
+            "desc": "zzz (1)"
+        },
+        {
+            "id": "11",
+            "desc": "11 (1)"
+        },
+        {
+            "id": "B-quick 004",
+            "desc": "B-quick 004 (1)"
+        },
+        {
+            "id": "B-quick -003",
+            "desc": "B-quick -003 (1)"
+        },
+        {
+            "id": "บ้าน Owner",
+            "desc": "บ้าน Owner (1)"
+        },
+        {
+            "id": "B-quick ddd sssss",
+            "desc": "B-quick ddd sssss (1)"
+        },
+        {
+            "id": "B-quick ddd bbb",
+            "desc": "B-quick ddd bbb (1)"
+        },
+        {
+            "id": "B-quick ddd ccc",
+            "desc": "B-quick ddd ccc (1)"
+        },
+        {
+            "id": "ss",
+            "desc": "ss (1)"
+        },
+        {
+            "id": "group",
+            "desc": "group (1)"
+        },
+        {
+            "id": "toto",
+            "desc": "toto (1)"
+        },
+        {
+            "id": "กลุ่มเราเอง",
+            "desc": "กลุ่มเราเอง (1)"
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+
+```
+
+
