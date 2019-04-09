@@ -38,6 +38,23 @@
 }
 ```
 
+# resetPassword
+
+## url
+    http://{server}/resetPassword/{id}
+
+## request body (No)
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": [],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+```
+
 
 # login
     This method not have header
