@@ -195,3 +195,33 @@
     "RESULT_MESSAGE": "Successfull"
 }
 ```
+
+# getDuePaymentAlert
+
+## url
+    http://{server}/api/admin/getDuePaymentAlert
+
+## request body
+```json
+```
+
+## response (if success)
+```json
+{
+    "RESULT_DATA": {
+        "summary": {
+            "due_payment": 1
+        },
+        "details": [
+            {
+                "device_no": "2ฒผ-5336",
+                "device_id": 19217,
+                "install_date": "3 มี.ค. 2562",
+                "expire_date": "30 มี.ค. 2562"
+            }
+        ]
+    },
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+```
