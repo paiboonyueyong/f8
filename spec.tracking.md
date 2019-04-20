@@ -108,6 +108,55 @@
 ```
 
 
+# getNearPoiList
+
+## url
+    http://{server2}/getNearPoiList
+
+## request body
+
+```json
+
+{
+ "latitude": 13.55939,
+ "longitude": 100.752446
+}
+
+```
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": [
+        {
+            "name": "pop bla bla",
+            "distance": 0.012
+        },
+        {
+            "name": "ฟฟฟ",
+            "distance": 0.383
+        },
+        {
+            "name": "Sunlong",
+            "distance": 8.277
+        },
+        {
+            "name": "testXX",
+            "distance": 39.322
+        },
+        {
+            "name": "อู่RUM",
+            "distance": 53.276
+        } 
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+
+```
+
+
 # getAddressLocation
 
 ## url
