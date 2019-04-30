@@ -18,6 +18,8 @@
   "sim_no": "",
   "model": "รุ่น Tracker",
   "network_operator": "AIS", // AIS/DTACK/TRUE,
+  "box_id": "",   // !!! New 2019/04/24,
+   "type": "", // !!! New 2019/04/24,
   "external_device" : true // กล่องจูน = true
 }
 ```
@@ -77,6 +79,7 @@
     "imei": "International Mobile Equipment Identity", // !!! New (2019-01-14)
     "sim_no": "", // !!! New (2019-01-14)
     "model": "รุ่น Tracker", // !!! New (2019-01-14)
+    "type"
     "network_operator": "", // AIS/DTAC/TRUE
     "last_paid_sim_no": "01-11-2018", // "เติมเงินค่า sim ครั้งล่าสุด"
 }
@@ -268,7 +271,8 @@
             "imei": "0101010181080000",
             "sim_no": "",
             "model": "รุ่น Tracker",
-            "vendor": "ยี่ห้อ Tracker",
+            "box_id": "",   // !!! New 2019/04/24,
+            "type": "GPSiam", // !!! New 2019/04/24,
             "device_id": 18647,
             "user_id": "1",
             "dealer_id": "",
@@ -416,9 +420,11 @@
 ```json
 {
   "filter": "11143",
-  "availableOnly": true
+  "sort": {"device_id": -1} 
 }
 ```
+
+** sort รองรับ field device_no, device_id, imei, model, network_operator ค่าที่เป็นไปได้ -1 คือ เรียกจากมากไปน้อย 1 คือ เรียกจากน้อยไปมาก
 
 ## response (if success)
 
@@ -430,7 +436,7 @@
             "imei": "878322312872687",
             "sim_no": "0814617649",
             "model": "รุ่นนี่ดี",
-            "vendor": "FastTrack",
+            "type": "GPSiam",
             "device_id": 11143,
             "device_status": "Active",
             "create_user": "Admin",
@@ -537,7 +543,7 @@
             "imei": "878322312872687",
             "sim_no": "0814617649",
             "model": "รุ่นนี่ดี",
-            "vendor": "FastTrack",
+            "type": "GPSiam",
             "device_id": 11143,
             "device_status": "Active",
             "create_user": "Admin",
@@ -580,7 +586,7 @@
        {
             "imei": "744775269012206",
             "model": "รุ่นนี่ดี",
-            "vendor": "FastTrack",
+            "type": "GPSiam",
             "device_id": 10641,
             "device_no": "4กท-2018",
             "expire_date": "20-11-2019",
@@ -589,7 +595,7 @@
         {
             "imei": "595159467112314",
             "model": "รุ่นนี่ดี",
-            "vendor": "FastTrack",
+            "type": "GPSiam",
             "device_id": 10642,
             "device_no": "4กท-182l",
             "expire_date": "11-10-2019",
@@ -598,7 +604,7 @@
         {
             "imei": "919521583213150",
             "model": "รุ่นนี่ดี",
-            "vendor": "FastTrack",
+            "type": "GPSiam",
             "device_id": 10643,
             "device_no": "มฟ-6935",
             "expire_date": "05-10-2019",
@@ -607,7 +613,7 @@
         {
             "imei": "158413810855509",
             "model": "รุ่นนี่ดี",
-            "vendor": "FastTrack",
+            "type": "GPSiam",
             "device_id": 10644,
             "device_no": "ยฐ-4941",
             "expire_date": "05-10-2019",
@@ -616,7 +622,7 @@
         {
             "imei": "906393724394719",
             "model": "รุ่นนี่ดี",
-            "vendor": "FastTrack",
+            "type": "GPSiam",
             "device_id": 10645,
             "device_no": "ฟป-6298",
             "expire_date": "05-10-2019",
@@ -997,12 +1003,19 @@
         "network_operator": "AIS", // AIS/DTACK/TRUE
         "device_no" : "43197",  // !!! New 2019/04/20
         "install_date" : "",    // !!! New 2019/04/20
+        "box_id": "",   // !!! New 2019/04/24,
+        "type": "", // !!! New 2019/04/24,
+        "symbol_color" : "#9B59B6", // !!! New 2019/04/30,
+	    "symbol_id" : "car-side",    // !!! New 2019/04/30,
         "special_setting": {    // !!! New 2019/04/20
             "car_no": "300648",    // !!! New 2019/04/20
             "car_province": "ยะลา",    // !!! New 2019/04/20
             "chassis": "MMKST22P405111721",    // !!! New 2019/04/20
             "change_detail": "รถกลับมาใช้งานได้ตามปกติแล้ว",    // !!! New 2019/04/20
-            "inform_date": "03-10-2018"    // !!! New 2019/04/20
+            "inform_date": "03-10-2018",    // !!! New 2019/04/20,
+            "car_type_id": "1422",    // !!! New 2019/04/24,
+            "car_brand": "NISSAN",    // !!! New 2019/04/24,
+            "company": "บริษัท แมจิค รูทส์ จำกัด"    // !!! New 2019/04/24,
         }
     },
     {
