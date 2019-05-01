@@ -73,6 +73,7 @@
     "reseller_note": "ขายได้ขายดี", // "Reseller Note"
     "symbol_id": "car.jpeg", // "ตั้งค่า Marker สัญลักษณ์"
     "symbol_color": "Red", // "ตั้งค่า Marker สี"
+    "icon_label": "label",       // !!! new 2019/05/01
     "petroleum_from_date": "11-10-2018", // "ตั้งค่าน้ำมัน เริ่มจากวันที่"
     "petroleum_to_date": "01-11-2018", // "ตั้งค่าน้ำมัน ถึงวันที่"
     "install_with_rfid": true, // ติดตั้งพร้อมเครื่องรูดบัตร !!! New (2019-01-08)
@@ -297,6 +298,7 @@
             "speed_limit": 90,
             "symbol_color": "Red",
             "symbol_id": "car.jpeg",
+            "icon_label": "label",       // !!! new 2019/05/01
             "last_paid_sim_no": "11-10-2018",
             "input_outputs": [
                 {
@@ -332,6 +334,7 @@
                 }
             ],
             "special_setting": {
+                "unit_id": "XXXXXX0101010181080000",   // new 2019/05/01
                 "is_send_dlt": true,
                 "is_send_scg": false,
                 "is_send_ambulance": false,
@@ -751,6 +754,7 @@
     "RESULT_MESSAGE": "Successfull"
 }
 ```
+
 # getDeviceAdnGroupList
 
 ## url
@@ -1067,5 +1071,205 @@
     "RESULT_STATUS": "000",
     "RESULT_MESSAGE": "Successfull",
     "RESULT_TOTAL": 2
+}
+```
+
+# getDeviceListByGroup
+// !!! new 2019/05/01
+## url
+    http://{server}/api/admin/getDeviceListByGroup/{pageNumber}/{pageSize} 
+
+## request body
+```json
+{
+  "filter": "Wutthin"
+}
+```
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": [
+        {
+            "box_id": "Test0009",
+            "device_no": "Test0009",
+            "imei": "Test0009",
+            "sim_no": "Test0009",
+            "model": "T333",
+            "network_operator": "AIS",
+            "external_device": false,
+            "create_user": "Admin2",
+            "last_upd_user": "Admin2",
+            "create_dtm": "2019-04-28T11:36:03.601Z",
+            "last_upd_dtm": "2019-04-28T11:36:03.601Z",
+            "device_id": 19375,
+            "visible": true,
+            "tracking_dtm": ""
+        },
+        {
+            "box_id": 11010,
+            "device_no": "t30-4994",
+            "type": "GPSiam",
+            "model": "ID5 (3G)",
+            "imei": 861311007963230,
+            "install_date": "23-04-2019",
+            "special_setting": {
+                "car_no": 304994,
+                "car_province": "ภูเก็ตt",
+                "chassis": "LH1841003373test",
+                "car_brand": "",
+                "company": "",
+                "car_type_id": 1225,
+                "change_detail": "",
+                "inform_date": "23-04-2019"
+            },
+            "device_id": 19374,
+            "create_user": "Admin2",
+            "last_upd_user": "Admin2",
+            "create_dtm": "2019-04-27T12:44:56.807Z",
+            "last_upd_dtm": "2019-05-01T05:03:41.289Z",
+            "driver_id": "",
+            "expire_date": null,
+            "symbol_color": "orange",
+            "symbol_id": "rocket-alt-2",
+            "visible": true,
+            "tracking_dtm": ""
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull",
+    "RESULT_TOTAL": 543
+}
+```
+
+# getDeviceDLTList
+// !!! new 2019/05/01
+## url
+    http://{server}/api/admin/getDeviceDLTList
+
+## request body
+
+## response (if success)
+```json
+{
+    "RESULT_DATA": [
+        {
+            "device_id": 19375,
+            "car_no": "",
+            "car_province": "กรุงเทพมหานคร",
+            "chassis": "",
+            "car_type_id": "2810",
+            "type": "",
+            "model": "T333",
+            "imei": "Test0009",
+            "install_date": "",
+            "tracking_dtm": "",
+            "change_detail": "",
+            "inform_date": ""
+        },
+        {
+            "device_id": 19353,
+            "car_no": "",
+            "car_province": "",
+            "chassis": "MMKST22P305131703",
+            "car_type_id": "1225",
+            "type": "",
+            "model": "t333",
+            "imei": "868998035987219",
+            "install_date": "09/03/2562",
+            "tracking_dtm": "",
+            "change_detail": "",
+            "inform_date": ""
+        },
+        {
+            "device_id": 19352,
+            "car_no": "",
+            "car_province": "สมุทรปราการ",
+            "chassis": "JN1UC4E26Z0000009",
+            "car_type_id": "1225",
+            "type": "",
+            "model": "T333",
+            "imei": "868998031027788",
+            "install_date": "03/12/2561",
+            "tracking_dtm": "",
+            "change_detail": "",
+            "inform_date": ""
+        },
+        {
+            "device_id": 18773,
+            "car_no": "",
+            "car_province": "ชลบุรี",
+            "chassis": "",
+            "car_type_id": "2100",
+            "type": "",
+            "model": "t333",
+            "imei": "868998035990486",
+            "install_date": "",
+            "tracking_dtm": "01/05/2562 14:31",
+            "change_detail": "test",
+            "inform_date": "24/05/2562"
+        }
+    ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull",
+    "RESULT_TOTAL": 4
+}
+```
+
+# getDeviceUserDetaiList
+// !!! new 2019/05/01
+## url
+    http://{server}/api/admin/getDeviceUserDetaiList
+
+## request body
+
+## response (if success)
+```json
+{
+    "RESULT_DATA": [
+        {
+            "device_id": 18773,
+            "device_group": "",
+            "device_no": "วีโก้",
+            "user_name": "poom",
+            "name": "",
+            "company": "fasttrack",
+            "install_date": "01/05/2562",
+            "expire_date": "05/11/2565",
+            "speed_limit": "300",
+            "alert_engine_on": "Email, Line",
+            "alert_engine_off": "Line"
+        },
+        {
+            "device_id": 18772,
+            "device_group": "",
+            "device_no": "18772",
+            "user_name": "",
+            "name": "",
+            "company": "",
+            "install_date": "",
+            "expire_date": "",
+            "speed_limit": 0,
+            "alert_engine_on": "",
+            "alert_engine_off": ""
+        },
+        {
+            "device_id": 18698,
+            "device_group": "wutthin",
+            "device_no": "ID5test",
+            "user_name": "Wutthin",
+            "name": "วุฒินันท์",
+            "company": "",
+            "install_date": "",
+            "expire_date": "",
+            "speed_limit": "140",
+            "alert_engine_on": "",
+            "alert_engine_off": ""
+        }
+     ],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull",
+    "RESULT_TOTAL": 543
 }
 ```
