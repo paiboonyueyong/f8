@@ -61,7 +61,8 @@
                 "total_distance": "0.0 กม.",
                 "total_elapse_times": "00:00",
                 "max_speed": 0,
-                "max_speed_dtm": "-"
+                "max_speed_dtm": "-",
+                "times": 0  // จำนวนครั้งที่วิ่งเร็ว !! 2019/05/04
             },
             "stop_machine_on": { // จอดขณะติดเครื่อง
                 "max_period": "00:00",
@@ -100,7 +101,8 @@
                 "total_distance": "0.0 กม.",
                 "total_elapse_times": "00:00",
                 "max_speed": 0,
-                "max_speed_dtm": "-"
+                "max_speed_dtm": "-",
+                "times": 0  // จำนวนครั้งที่วิ่งเร็ว !! 2019/05/04
             },
             "stop_machine_on": {
                 "max_period": "00:00",
@@ -138,7 +140,8 @@
                 "total_distance": "0.0 กม.",
                 "total_elapse_times": "00:00",
                 "max_speed": 0,
-                "max_speed_dtm": "-"
+                "max_speed_dtm": "-",
+                "times": 0  // จำนวนครั้งที่วิ่งเร็ว !! 2019/05/04
             },
             "stop_machine_on": {
                 "max_period": "2:56:10",
@@ -177,7 +180,8 @@
                 "total_distance": "0.0 กม.",
                 "total_elapse_times": "00:00",
                 "max_speed": 0,
-                "max_speed_dtm": "-"
+                "max_speed_dtm": "-",
+                "times": 0  // จำนวนครั้งที่วิ่งเร็ว !! 2019/05/04
             },
             "stop_machine_on": {
                 "max_period": "00:00",
@@ -217,7 +221,8 @@
                 "total_distance": "0.0 กม.",
                 "total_elapse_times": "00:00",
                 "max_speed": 0,
-                "max_speed_dtm": "-"
+                "max_speed_dtm": "-",
+                "times": 0  // จำนวนครั้งที่วิ่งเร็ว !! 2019/05/04
             },
             "stop_machine_on": {
                 "max_period": "00:00",
@@ -257,7 +262,8 @@
                 "total_distance": "0.0 กม.",
                 "total_elapse_times": "00:00",
                 "max_speed": 0,
-                "max_speed_dtm": "-"
+                "max_speed_dtm": "-",
+                "times": 0  // จำนวนครั้งที่วิ่งเร็ว !! 2019/05/04
             },
             "stop_machine_on": {
                 "max_period": "00:00",
@@ -297,7 +303,8 @@
                 "total_distance": "0.0 กม.",
                 "total_elapse_times": "00:00",
                 "max_speed": 0,
-                "max_speed_dtm": "-"
+                "max_speed_dtm": "-",
+                "times": 0  // จำนวนครั้งที่วิ่งเร็ว !! 2019/05/04
             },
             "stop_machine_on": {
                 "max_period": "00:00",
@@ -336,7 +343,8 @@
                 "total_distance": "0.0 กม.",
                 "total_elapse_times": "00:00",
                 "max_speed": 0,
-                "max_speed_dtm": "-"
+                "max_speed_dtm": "-",
+                "times": 0  // จำนวนครั้งที่วิ่งเร็ว !! 2019/05/04
             },
             "stop_machine_on": {
                 "max_period": "13:53:01",

@@ -3,7 +3,7 @@
 ## Request Header (alway pass : token)
 Remark 
     1. dropdown ประเภทการแจ้งเตือน ใช้
-        http://{server}/api/admin/getAlertTypeList 
+        http://{server}/api/admin/getAlertTypeList
         Body : {
             "alert_method":"GUI"
         }
@@ -18,6 +18,7 @@ Remark
 ## request body (หากต้องการดึงข้อมูลรถทุกคันให้ส่ง devices:[])
 ```json
 {
+    "alert_type_id": "E7",  // !!! new 2019.04.30
 	"devices":[
         {
             "name": "[wutthinan]",
