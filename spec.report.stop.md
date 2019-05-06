@@ -30,88 +30,97 @@ elapse_time_over มีหน่วยเป็นนาที เป็น opti
         {
             "details": [
                 {
-                    "device_id": 18681,
-                    "status": "จอด",
-                    "start_at_place": "ต.หนองปรือ อ.บางละมุง จ.ชลบุรี",
-                    "start_at_latitude": 12.914666,
-                    "start_at_longitude": 100.913103,
-                    "end_at_latitude": 12.914565,
-                    "end_at_longitude": 100.913428,
-                    "end_at_place": "ต.หนองปรือ อ.บางละมุง จ.ชลบุรี",
                     "device_no": "T333/30s",
-                    "date": "17 ธ.ค. 2561",
-                    "start_time": "23:00:00",
-                    "end_time": "23:07:47",
-                    "elapse": "07:47"
+                    "device_id": 18681,
+                    "status": "ดับ",    //สถานะ
+                    "symbol_id": "shuttle-van",
+                    "symbol_color": "#9B59B6",
+                    "fuel": 100,    // น้ำมัน
+                    "engine": "ดับเครื่อง", // เครื่องยนต์
+                    "date": "1 มี.ค. 2562", 
+                    "elapse": "352:00:30",  //เวลาจอด
+                    "start_dtm": "1 มี.ค. 2562",    //วันที่เริ่ม
+                    "start_time": "00:00:00",       //เวลาเข้า
+                    "start_at_place": "บ้านพฤกษา บุญสัมพันธ์-พัทยากลาง (0.2 กม.) ต.หนองปรือ อ.บางละมุง จ.ชลบุรี",   //สถานที่
+                    "start_at_latitude": 12.91458,
+                    "start_at_longitude": 100.91328,
+                    "end_dtm": "15 มี.ค. 2562", //สิ้นสุด
+                    "end_time": "16:00:30", //เวลาออก
+                    "end_at_latitude": 14.34217,
+                    "end_at_longitude": 99.855388,
+                    "end_at_place": "ต.จรเข้สามพัน อ.อู่ทอง จ.สุพรรณบุรี"
                 },
                 {
-                    "device_id": 18681,
-                    "status": "จอด",
-                    "start_at_place": "ต.ห้วยใหญ่ อ.บางละมุง จ.ชลบุรี",
-                    "start_at_latitude": 12.850223,
-                    "start_at_longitude": 100.96577,
-                    "end_at_latitude": 12.850366,
-                    "end_at_longitude": 100.965725,
-                    "end_at_place": "ต.ห้วยใหญ่ อ.บางละมุง จ.ชลบุรี",
                     "device_no": "T333/30s",
-                    "date": "17 ธ.ค. 2561",
-                    "start_time": "23:25:13",
-                    "end_time": "09:59:34",
-                    "elapse": "10:34:21"
+                    "device_id": 18681,
+                    "status": "ดับ",
+                    "symbol_id": "shuttle-van",
+                    "symbol_color": "#9B59B6",
+                    "fuel": 100,
+                    "engine": "ดับเครื่อง", // เครื่องยนต์
+                    "date": "15 มี.ค. 2562",
+                    "elapse": "58:12",
+                    "start_dtm": "15 มี.ค. 2562",
+                    "start_time": "16:54:41",
+                    "start_at_place": "ต.ห้วยม่วง อ.กำแพงแสน จ.นครปฐม",
+                    "start_at_latitude": 14.128066,
+                    "start_at_longitude": 100.047945,
+                    "end_dtm": "15 มี.ค. 2562",
+                    "end_time": "17:52:53",
+                    "end_at_latitude": 14.128051,
+                    "end_at_longitude": 100.047916,
+                    "end_at_place": "ต.ห้วยม่วง อ.กำแพงแสน จ.นครปฐม"
                 },
                 {
-                    "device_id": 18681,
-                    "status": "จอด",
-                    "start_at_place": "ต.หนองปรือ อ.บางละมุง จ.ชลบุรี",
-                    "start_at_latitude": 12.91453,
-                    "start_at_longitude": 100.913135,
-                    "end_at_latitude": 12.91459,
-                    "end_at_longitude": 100.913195,
-                    "end_at_place": "ต.หนองปรือ อ.บางละมุง จ.ชลบุรี",
                     "device_no": "T333/30s",
-                    "date": "18 ธ.ค. 2561",
-                    "start_time": "10:20:29",
-                    "end_time": "10:31:56",
-                    "elapse": "11:27"
+                    "device_id": 18681,
+                    "status": "ดับ",
+                    "symbol_id": "shuttle-van",
+                    "symbol_color": "#9B59B6",
+                    "fuel": 100,
+                    "engine": "ดับเครื่อง", // เครื่องยนต์
+                    "date": "15 มี.ค. 2562",
+                    "elapse": "14:40",
+                    "start_dtm": "15 มี.ค. 2562",
+                    "start_time": "22:47:44",
+                    "start_at_place": "ปตท.เอ็นจีวี ถนนปทุมธานี-บางเลน (0.07 กม.) ต.ขุนศรี อ.ไทรน้อย จ.นนทบุรี",
+                    "start_at_latitude": 14.023588,
+                    "start_at_longitude": 100.285796,
+                    "end_dtm": "15 มี.ค. 2562",
+                    "end_time": "23:02:24",
+                    "end_at_latitude": 14.023633,
+                    "end_at_longitude": 100.285706,
+                    "end_at_place": "ปตท.เอ็นจีวี ถนนปทุมธานี-บางเลน (0.07 กม.) ต.ขุนศรี อ.ไทรน้อย จ.นนทบุรี"
                 },
                 {
-                    "device_id": 18681,
-                    "status": "จอด",
-                    "start_at_place": "ทางหลวงแผ่นดินหมายเลข 3 ต.ทุ่งสุขลา อ.ศรีราชา จ.ชลบุรี",
-                    "start_at_latitude": 13.086876,
-                    "start_at_longitude": 100.9178,
-                    "end_at_latitude": 13.086758,
-                    "end_at_longitude": 100.917683,
-                    "end_at_place": "ทางหลวงแผ่นดินหมายเลข 3 ต.ทุ่งสุขลา อ.ศรีราชา จ.ชลบุรี",
                     "device_no": "T333/30s",
-                    "date": "18 ธ.ค. 2561",
-                    "start_time": "11:18:44",
-                    "end_time": "11:28:12",
-                    "elapse": "09:28"
-                },
-                {
                     "device_id": 18681,
-                    "status": "จอด",
-                    "start_at_place": "ต.หนองปลาไหล อ.บางละมุง จ.ชลบุรี",
-                    "start_at_latitude": 12.969698,
-                    "start_at_longitude": 100.972493,
-                    "end_at_latitude": 12.969541,
-                    "end_at_longitude": 100.972501,
-                    "end_at_place": "ต.หนองปลาไหล อ.บางละมุง จ.ชลบุรี",
-                    "device_no": "T333/30s",
-                    "date": "18 ธ.ค. 2561",
-                    "start_time": "11:43:08",
-                    "end_time": "11:53:35",
-                    "elapse": "10:27"
+                    "status": "ดับ",
+                    "symbol_id": "shuttle-van",
+                    "symbol_color": "#9B59B6",
+                    "fuel": 100,
+                    "engine": "ดับเครื่อง", // เครื่องยนต์
+                    "date": "15 มี.ค. 2562",
+                    "elapse": "7:44:13",
+                    "start_dtm": "15 มี.ค. 2562",
+                    "start_time": "23:49:29",
+                    "start_at_place": "ต.ห้วยม่วง อ.กำแพงแสน จ.นครปฐม",
+                    "start_at_latitude": 14.128098,
+                    "start_at_longitude": 100.047973,
+                    "end_dtm": "16 มี.ค. 2562",
+                    "end_time": "07:33:42",
+                    "end_at_latitude": 14.128093,
+                    "end_at_longitude": 100.047973,
+                    "end_at_place": "ต.ห้วยม่วง อ.กำแพงแสน จ.นครปฐม"
                 }
             ],
             "summary": {
-                "total_elapse": "11:13:30"
+                "total_elapse": "360:57:35"
             }
         }
     ],
     "RESULT_STATUS": "000",
     "RESULT_MESSAGE": "Successfull",
-    "RESULT_TOTAL": 59
+    "RESULT_TOTAL": 221
 }
 ```

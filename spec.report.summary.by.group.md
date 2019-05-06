@@ -34,20 +34,20 @@
                     "speed_limit": "140",
                     "install_date": "2018-12-17T17:00:00.000Z",
                     "expire_date": "2019-03-30T17:00:00.000Z",
-                    "max_speed": 132,
-                    "max_speed_dtm": "22-12-2018 09:10:02",
+                    "max_speed": 132,   // ความเร็วสูงสุดที่ใช้
+                    "max_speed_dtm": "22-12-2018 09:10:02", // เวลาที่ขับเร็วสูงสุด
                     "max_speed_at_latitude": 100.990709,
                     "max_speed_at_longitude": 100.990709,
                     "symbol_id": "car-side",
                     "symbol_color": "#5DADE2",
-                    "total_distance": "0.0 กม.",
-                    "stop_machine_on_duration": "25(วัน) 16:38:56",
-                    "working_duration": "33(วัน) 08:44:15",
-                    "machine_on_times": 1,
-                    "speed_over_times": 0,
-                    "stop_machine_on_over_x_mins_times": 220,
-                    "stop_machine_on_max_duration": "25(วัน) 16:38:56",
-                    "fuel_use": 0
+                    "total_distance": "0.0 กม.",    // สรุประยะทางการวิ่ง
+                    "stop_machine_on_duration": "25(วัน) 16:38:56",     // จอดติดเครื่องนานสุด
+                    "working_duration": "33(วัน) 08:44:15", // เวลาใช้งานทั้งหมด
+                    "machine_on_times": 1,  // เครื่องยนต์ติด
+                    "speed_over_times": 0,  // จำนวนครั้งที่วิ่งเร็วเกิน
+                    "stop_machine_on_over_x_mins_times": 220,   // จำนวนครั้งจอดเกิน 10 นาที
+                    "stop_machine_on_max_duration": "25(วัน) 16:38:56", // เวลาที่จอดติดเครื่อง
+                    "fuel_use": 0   // ปริมาณการใช้งานน้ำมัน
                 },
                 {
                     "imei": "864507032289828",

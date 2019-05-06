@@ -31,6 +31,7 @@
          "driver_id":"",
          "symbol_color":"",
          "symbol_id":"",
+         "icon_label":"",  // !!! new 04/05/2019
          "total_speed_over":0,
          "total_distance":"23.0",
          "total_stop_minute":21,
@@ -78,7 +79,17 @@
                "speed_over":false,
                "distance":"0.0"
             }
-         ]
+         ],
+         "sensor": [    // !!! new 04/05/2019
+                {
+                    "name": "ประตูปิด",
+                    "when": "04/05/2562 00:50"
+                },
+                {
+                    "name": "ประตูเปิด",
+                    "when": "04/05/2562 00:36"
+                }
+            ]
       }
    ],
    "RESULT_STATUS":"000",
