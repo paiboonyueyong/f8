@@ -47,33 +47,6 @@
 }
 ```
 
-
-# newPlace
-
-## url
-    http://{server}/newPlace 
-
-## request body
-```json
-{
-    "name" : "สถานที่ใหม่เอี่ยม Test",
-    "location" : {
-        "latitude" : 14.988135,
-        "longitude" : 102.096535
-    }
-}
-```
-## response (if success)
-
-```json
-{
-    "RESULT_DATA": [],
-    "RESULT_STATUS": "000",
-    "RESULT_MESSAGE": "Successfull"
-}
-```
-
-
 # updatePOI
 
 ## url
@@ -120,6 +93,23 @@
 
 ## url
     http://{server}/deletePOI/{id}
+
+## request body (No)
+
+## response (if success)
+
+```json
+{
+    "RESULT_DATA": [],
+    "RESULT_STATUS": "000",
+    "RESULT_MESSAGE": "Successfull"
+}
+```
+
+# deletePOIAll
+
+## url
+    http://{server}/deletePOIAll
 
 ## request body (No)
 
