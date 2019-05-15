@@ -33,7 +33,8 @@
         "is_edit_poi": true,
         "is_view_history": false,
         "is_send_command": true,
-        "is_view_report": false
+        "is_view_report": false,
+        "is_personal_db": false
     }
 }
 
