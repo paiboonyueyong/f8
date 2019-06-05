@@ -14,7 +14,9 @@
             "vehicle_chassis_no": "LH1841003373test",
             "vehicle_register_type": 1225,
             "province_code": "",
-            "is_send_dlt": false
+            "is_send_dlt": false,
+            "cust_id": 179,
+            "cust_name": "K.PUI"
         },
         {
             "imei": "868998035983200",
@@ -25,7 +27,9 @@
             "vehicle_chassis_no": "987654321",
             "vehicle_register_type": "1225",
             "province_code": "203",
-            "is_send_dlt": true
+            "is_send_dlt": true,
+            "cust_id": 179,
+            "cust_name": "K.PUI"
         }
     ],
     "RESULT_STATUS": "000",

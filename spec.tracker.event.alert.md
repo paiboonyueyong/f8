@@ -12,7 +12,8 @@
 { 
     "devices": [], /* fliter device */
     "getNotify" : true, /* get message notification */
-    "filter": "สายgps" /* filter alert type */
+    "filter": "สายgps", /* filter alert type */
+    "allAlertType": true /* !!! New 2019-05-25 if value is ture will return all alert type and ignore setup */
 }
 ```
 

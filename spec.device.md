@@ -300,6 +300,7 @@
             "symbol_id": "car.jpeg",
             "icon_label": "label",       // !!! new 2019/05/01
             "last_paid_sim_no": "11-10-2018",
+            "unit_id": "XXXXXX0101010181080000",   // new 2019/05/01
             "input_outputs": [
                 {
                     "port_type": "Input",
@@ -334,7 +335,6 @@
                 }
             ],
             "special_setting": {
-                "unit_id": "XXXXXX0101010181080000",   // new 2019/05/01
                 "is_send_dlt": true,
                 "is_send_scg": false,
                 "is_send_ambulance": false,
